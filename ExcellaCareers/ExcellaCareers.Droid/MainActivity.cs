@@ -1,5 +1,7 @@
 ﻿using System;
-
+using System.IO;
+using System.Net;
+using System.Text;
 using Android.App;
 using Android.Content;
 using Android.Runtime;
@@ -9,7 +11,7 @@ using Android.OS;
 
 namespace ExcellaCareers.Droid
 {
-	[Activity (Label = "ExcellaCareers.Droid", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity (Label = "Excella Careers", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity
 	{
 		int count = 1;
@@ -17,17 +19,27 @@ namespace ExcellaCareers.Droid
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-
-			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
-			// Get our button from the layout resource,
-			// and attach an event to it
-			Button button = FindViewById<Button> (Resource.Id.myButton);
-			
-			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks!", count++);
-			};
+			var txtMain = FindViewById<TextView> (Resource.Id.txtMain);
+		    var webResponse = GetWebContent();
+		    txtMain.Text = webResponse;
+		}
+
+		private string GetWebContent()
+		{
+			var request = WebRequest.Create("https://careers-excella.icims.com/jobs/search");
+			var response = request.GetResponse();
+
+			var stream = response.GetResponseStream();
+			var streamReader = new StreamReader(stream, Encoding.Default);
+			var responseText = streamReader.ReadToEnd();
+
+			streamReader.Close();
+			stream.Close();
+			response.Close();
+
+			return responseText;
 		}
 	}
 }
