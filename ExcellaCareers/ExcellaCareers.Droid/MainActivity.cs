@@ -1,13 +1,12 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Text;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Android.OS;
+using HtmlAgilityPack;
 
 namespace ExcellaCareers.Droid
 {
@@ -22,13 +21,16 @@ namespace ExcellaCareers.Droid
 			SetContentView (Resource.Layout.Main);
 
 			var txtMain = FindViewById<TextView> (Resource.Id.txtMain);
-		    var webResponse = GetWebContent();
-		    txtMain.Text = webResponse;
+			var webResponse = GetWebContent();
+
+			parse(webResponse);
+
+			txtMain.Text = webResponse;
 		}
 
 		private string GetWebContent()
 		{
-			var request = WebRequest.Create("https://careers-excella.icims.com/jobs/search");
+			var request = WebRequest.Create("https://careers-excella.icims.com/jobs/search?in_iframe=1");
 			var response = request.GetResponse();
 
 			var stream = response.GetResponseStream();
@@ -40,6 +42,23 @@ namespace ExcellaCareers.Droid
 			response.Close();
 
 			return responseText;
+		}
+
+		private void parse(string html)
+		{
+			var htmlDoc = new HtmlAgilityPack.HtmlDocument();
+
+			// filePath is a path to a file containing the html
+			htmlDoc.LoadHtml(html);
+
+			if (htmlDoc.DocumentNode != null)
+			{
+				var jobsTable =
+					htmlDoc.DocumentNode.Descendants("table")
+						.Where( t =>
+								t.Attributes.Contains("class") &&
+								t.Attributes["class"].Value.Contains("iCIMS_JobsTable"));
+			}
 		}
 	}
 }
