@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -10,57 +11,76 @@ using HtmlAgilityPack;
 
 namespace ExcellaCareers.Droid
 {
-	[Activity (Label = "Excella Careers", MainLauncher = true, Icon = "@drawable/icon")]
-	public class MainActivity : Activity
-	{
-		int count = 1;
+    [Activity (Label = "Excella Careers", MainLauncher = true, Icon = "@drawable/icon")]
+    public class MainActivity : ListActivity
+    {
+        protected override void OnCreate (Bundle bundle)
+        {
+            base.OnCreate (bundle);
+            SetContentView (Resource.Layout.Main);
+            
+            var webResponse = GetWebContent();
 
-		protected override void OnCreate (Bundle bundle)
-		{
-			base.OnCreate (bundle);
-			SetContentView (Resource.Layout.Main);
+            var jobs = parse(webResponse);
+            var jobStrings = jobs.Select(j => $"{j.Title}\n{j.Url.GetLeftPart(UriPartial.Path).ToString()}").ToList();
+            
+            this.ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, jobStrings);
+        }
 
-			var txtMain = FindViewById<TextView> (Resource.Id.txtMain);
-			var webResponse = GetWebContent();
+        private string GetWebContent()
+        {
+            var request = WebRequest.Create("https://careers-excella.icims.com/jobs/search?in_iframe=1");
+            var response = request.GetResponse();
 
-			parse(webResponse);
+            var stream = response.GetResponseStream();
+            var streamReader = new StreamReader(stream, Encoding.Default);
+            var responseText = streamReader.ReadToEnd();
 
-			txtMain.Text = webResponse;
-		}
+            streamReader.Close();
+            stream.Close();
+            response.Close();
 
-		private string GetWebContent()
-		{
-			var request = WebRequest.Create("https://careers-excella.icims.com/jobs/search?in_iframe=1");
-			var response = request.GetResponse();
+            return responseText;
+        }
 
-			var stream = response.GetResponseStream();
-			var streamReader = new StreamReader(stream, Encoding.Default);
-			var responseText = streamReader.ReadToEnd();
+        private IEnumerable<Job> parse(string html)
+        {
+            var htmlDoc = new HtmlAgilityPack.HtmlDocument();
 
-			streamReader.Close();
-			stream.Close();
-			response.Close();
+            // filePath is a path to a file containing the html
+            htmlDoc.LoadHtml(html);
 
-			return responseText;
-		}
+            if (htmlDoc.DocumentNode != null)
+            {
+                var jobsTable =
+                    htmlDoc.DocumentNode.Descendants("table")
+                        .First( t =>
+                                t.Attributes.Contains("class") &&
+                                t.Attributes["class"].Value.Contains("iCIMS_JobsTable"));
+                var body = jobsTable.Descendants("tBody").First();
+                var jobCells = body.Descendants("tr").Select(tr => tr.Descendants("td").First());
 
-		private void parse(string html)
-		{
-			var htmlDoc = new HtmlAgilityPack.HtmlDocument();
+                var jobList = new List<Job>();
 
-			// filePath is a path to a file containing the html
-			htmlDoc.LoadHtml(html);
+                foreach (var jobCell in jobCells)
+                {
+                    var link = jobCell.Descendants("a").First();
+                    jobList.Add(new Job { Title = link.InnerText.Trim(), Url = new Uri(link.Attributes["href"].Value) });
+                }
 
-			if (htmlDoc.DocumentNode != null)
-			{
-				var jobsTable =
-					htmlDoc.DocumentNode.Descendants("table")
-						.Where( t =>
-								t.Attributes.Contains("class") &&
-								t.Attributes["class"].Value.Contains("iCIMS_JobsTable"));
-			}
-		}
-	}
+                return jobList;
+            }
+
+            return null;
+        }
+    }
+
+    public class Job
+    {
+        public string Title { get; set; }
+
+        public Uri Url { get; set; }
+    }
 }
 
 
