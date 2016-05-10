@@ -11,7 +11,7 @@ namespace ExcellaCareers.Services.Impl
         {
             var request = WebRequest.Create(url);
 
-            var response = await request.GetResponseAsync();
+            var response = await request.GetResponseAsync().ConfigureAwait(false);
 
             var stream = response.GetResponseStream();
             var streamReader = new StreamReader(stream, Encoding.UTF8);

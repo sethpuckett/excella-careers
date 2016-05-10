@@ -27,12 +27,12 @@ namespace ExcellaCareers.Droid
             this.careerHtmlParser = new CareerHtmlParser();
         }
 
-        protected override void OnCreate (Bundle bundle)
+        protected override async void OnCreate (Bundle bundle)
         {
             base.OnCreate (bundle);
             SetContentView (Resource.Layout.Main);
             
-            var webResponse = this.htmlScraper.Scrape(Resources.GetString(Resource.String.careers_url)).Result;
+            var webResponse = await this.htmlScraper.Scrape(Resources.GetString(Resource.String.careers_url));
 
             var jobs = this.careerHtmlParser.ParseHtml(webResponse);
             var jobStrings = jobs.Select(j => $"{j.Title}\n{j.Url.GetLeftPart(UriPartial.Path).ToString()}").ToList();
