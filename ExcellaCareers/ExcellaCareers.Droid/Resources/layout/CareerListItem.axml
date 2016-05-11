@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
-    p1:layout_width="fill_parent"
-    p1:layout_height="wrap_content"
-    p1:gravity="left|center">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:layout_width="wrap_content"
+    android:paddingBottom="5px"
+    android:paddingTop="5px"
+    android:paddingLeft="5px">
     <ImageView
-        p1:id="@+id/avatar"
-        p1:layout_width="wrap_content"
-        p1:layout_height="fill_parent"
-        p1:src="@drawable/icon" />
+        android:id="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="6dip"
+        android:src="@drawable/icon" />
     <LinearLayout
-        p1:orientation="vertical"
-        p1:layout_width="0dip"
-        p1:layout_weight="1"
-        p1:layout_height="fill_parent">
+        android:orientation="vertical"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="fill_parent">
         <TextView
-            p1:id="@+id/title"
-            p1:layout_width="wrap_content"
-            p1:layout_height="wrap_content"
-            p1:gravity="center" />
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
         <TextView
-            p1:id="@+id/url"
-            p1:layout_width="wrap_content"
-            p1:layout_height="wrap_content"
-            p1:textColor="#000000" />
+            android:id="@+id/url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:textColor="#0099CC" />
     </LinearLayout>
 </LinearLayout>
