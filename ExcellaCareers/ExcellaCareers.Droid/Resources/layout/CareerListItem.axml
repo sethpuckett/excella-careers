@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="fill_parent"
+    p1:layout_height="wrap_content"
+    p1:gravity="left|center">
+    <ImageView
+        p1:id="@+id/avatar"
+        p1:layout_width="wrap_content"
+        p1:layout_height="fill_parent"
+        p1:src="@drawable/icon" />
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:layout_width="0dip"
+        p1:layout_weight="1"
+        p1:layout_height="fill_parent">
+        <TextView
+            p1:id="@+id/title"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:gravity="center" />
+        <TextView
+            p1:id="@+id/url"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:textColor="#000000" />
+    </LinearLayout>
+</LinearLayout>

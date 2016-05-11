@@ -35,9 +35,8 @@ namespace ExcellaCareers.Droid
             var webResponse = await this.htmlScraper.Scrape(Resources.GetString(Resource.String.careers_url));
 
             var jobs = this.careerHtmlParser.ParseHtml(webResponse);
-            var jobStrings = jobs.Select(j => $"{j.Title}\n{j.Url.GetLeftPart(UriPartial.Path).ToString()}").ToList();
             
-            this.ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, jobStrings);
+            this.ListAdapter = new JobListItemAdapter(this, Resource.Layout.CareerListItem, jobs.ToList());
         }
     }
 }
