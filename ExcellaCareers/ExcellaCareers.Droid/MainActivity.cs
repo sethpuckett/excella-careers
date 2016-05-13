@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Text;
+﻿using System.Linq;
 using Android.App;
-using Android.Widget;
+using Android.Content;
 using Android.OS;
-using ExcellaCareers.Model;
 using ExcellaCareers.Services;
 using ExcellaCareers.Services.Impl;
-using HtmlAgilityPack;
 
 namespace ExcellaCareers.Droid
 {
@@ -37,6 +30,16 @@ namespace ExcellaCareers.Droid
             var jobs = this.careerHtmlParser.ParseHtml(webResponse);
             
             this.ListAdapter = new JobListItemAdapter(this, Resource.Layout.CareerListItem, jobs.ToList());
+
+            this.ListView.ItemClick += (sender, e) =>
+            {
+                var item = this.ListView.GetItemAtPosition(e.Position);
+                var sendIntent = new Intent();
+                sendIntent.SetAction(Intent.ActionSend);
+                sendIntent.PutExtra(Intent.ExtraText, "This is my text to send.");
+                sendIntent.SetType("text/plain");
+                StartActivity(Intent.CreateChooser(sendIntent, "Share With..."));
+            };
         }
     }
 }
