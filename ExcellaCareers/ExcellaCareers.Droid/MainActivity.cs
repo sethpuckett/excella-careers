@@ -8,7 +8,7 @@ using ExcellaCareers.Services.Impl;
 
 namespace ExcellaCareers.Droid
 {
-    [Activity (Label = "Excella Careers", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity (Label = "Excella Careers", Icon = "@drawable/ExcellaLogo")]
     public class MainActivity : ListActivity
     {
         private readonly IHtmlScraper htmlScraper;
