@@ -2,6 +2,7 @@
 using Android.App;
 using Android.Content;
 using Android.OS;
+using ExcellaCareers.Model;
 using ExcellaCareers.Services;
 using ExcellaCareers.Services.Impl;
 
@@ -33,10 +34,11 @@ namespace ExcellaCareers.Droid
 
             this.ListView.ItemClick += (sender, e) =>
             {
-                var item = this.ListView.GetItemAtPosition(e.Position);
+                var item = this.ListAdapter.GetItem(e.Position).Cast<Job>();
                 var sendIntent = new Intent();
                 sendIntent.SetAction(Intent.ActionSend);
-                sendIntent.PutExtra(Intent.ExtraText, "This is my text to send.");
+                sendIntent.PutExtra(Intent.ExtraText, $"Check out this opportunity with Excella! {item.Url}");
+                sendIntent.PutExtra(Intent.ExtraSubject, "Opportunities with Excella");
                 sendIntent.SetType("text/plain");
                 StartActivity(Intent.CreateChooser(sendIntent, "Share With..."));
             };

@@ -38,10 +38,10 @@ namespace ExcellaCareers.Droid
             if (job != null)
             {
                 var title = (TextView) view.FindViewById(Resource.Id.title);
-                var email = (TextView)view.FindViewById(Resource.Id.url);
+                //var email = (TextView)view.FindViewById(Resource.Id.url);
 
                 title?.SetText(job.Title, TextView.BufferType.Normal);
-                email?.SetText(job.Url.ToString(), TextView.BufferType.Normal);
+                //email?.SetText(job.Url.ToString(), TextView.BufferType.Normal);
             }
 
             return view;
