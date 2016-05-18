@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
+  <style name="MyTheme.Base" parent="Theme.AppCompat.Light">
+  </style>
+
+  <style name="MyTheme" parent="MyTheme.Base">
+  </style>
+  
   <style name="SplashTheme" parent ="Theme.AppCompat.Light">
-    <item name="android:windowBackground">@drawable/ExcellaLogo</item>
+    <item name="android:windowBackground">@drawable/Splash</item>
     <item name="android:windowNoTitle">true</item>
   </style>
 </resources>

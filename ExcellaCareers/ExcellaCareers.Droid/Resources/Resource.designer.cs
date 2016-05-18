@@ -2441,6 +2441,12 @@ namespace ExcellaCareers.Droid
 			// aapt resource value: 0x7f080079
 			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131230841;
 			
+			// aapt resource value: 0x7f08013f
+			public const int MyTheme = 2131231039;
+			
+			// aapt resource value: 0x7f08013e
+			public const int MyTheme_Base = 2131231038;
+			
 			// aapt resource value: 0x7f080017
 			public const int Platform_AppCompat = 2131230743;
 			
@@ -2513,8 +2519,8 @@ namespace ExcellaCareers.Droid
 			// aapt resource value: 0x7f080035
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131230773;
 			
-			// aapt resource value: 0x7f08013e
-			public const int SplashTheme = 2131231038;
+			// aapt resource value: 0x7f080140
+			public const int SplashTheme = 2131231040;
 			
 			// aapt resource value: 0x7f0800b6
 			public const int TextAppearance_AppCompat = 2131230902;
