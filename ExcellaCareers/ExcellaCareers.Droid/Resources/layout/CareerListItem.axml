@@ -6,29 +6,20 @@
     android:paddingBottom="5px"
     android:paddingTop="5px"
     android:paddingLeft="5px">
-    <ImageView
-        android:id="@+id/avatar"
+    <TextView
+        android:id="@+id/title"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_marginRight="6dip"
-        android:src="@drawable/icon" />
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="0dip"
-        android:layout_weight="1"
-        android:layout_height="fill_parent"
-        android:background="@android:color/white">
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textColor="#0099CC" />
-        <TextView
-            android:id="@+id/url"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10px"
-            android:textColor="#0099CC" />
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#002d66"
+        android:textSize="20dp" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonShare"
+        android:layout_centerVertical="true"
+        android:src="@drawable/Share"
+        android:gravity="right" />
 </LinearLayout>
