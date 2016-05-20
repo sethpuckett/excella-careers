@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="wrap_content"
     android:gravity="left|center"
     android:layout_width="wrap_content"
     android:paddingBottom="5px"
-    android:paddingTop="5px"
-    android:paddingLeft="5px">
+    android:paddingTop="5px">
     <TextView
         android:id="@+id/title"
+        android:paddingLeft="10dp"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_gravity="left"
         android:textColor="#002d66"
-        android:textSize="20dp" />
-    <ImageButton
+        android:textSize="12dp"
+        android:maxWidth="300dp" />
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
         android:id="@+id/imageButtonShare"
         android:layout_centerVertical="true"
         android:src="@drawable/Share"
-        android:gravity="right" />
-</LinearLayout>
+        android:layout_alignParentRight="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="30dp"
+        android:maxHeight="30dp"
+        android:paddingRight="50dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/imageButtonInfo"
+        android:layout_centerVertical="true"
+        android:src="@drawable/Info"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

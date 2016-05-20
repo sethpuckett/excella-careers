@@ -1,18 +1,11 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-
-using Android.App;
 using Android.Content;
-using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using ExcellaCareers.Model;
-using Java.Lang;
 
-namespace ExcellaCareers.Droid
+namespace ExcellaCareers.Droid.Common
 {
     public class JobListItemAdapter: ArrayAdapter<Job> 
     {
@@ -38,10 +31,20 @@ namespace ExcellaCareers.Droid
             if (job != null)
             {
                 var title = (TextView) view.FindViewById(Resource.Id.title);
-                //var email = (TextView)view.FindViewById(Resource.Id.url);
+                var shareButton = view.FindViewById<ImageView>(Resource.Id.imageButtonShare);
+                var infoButton = view.FindViewById<ImageView>(Resource.Id.imageButtonInfo);
 
                 title?.SetText(job.Title, TextView.BufferType.Normal);
-                //email?.SetText(job.Url.ToString(), TextView.BufferType.Normal);
+
+                shareButton.Click += (sender, e) =>
+                {
+                    var sendIntent = new Intent();
+                    sendIntent.SetAction(Intent.ActionSend);
+                    sendIntent.PutExtra(Intent.ExtraText, $"Check out this opportunity with Excella!{System.Environment.NewLine}{job.Url}");
+                    sendIntent.PutExtra(Intent.ExtraSubject, "Opportunities with Excella");
+                    sendIntent.SetType("text/plain");
+                    this.Context.StartActivity(Intent.CreateChooser(sendIntent, "Share With..."));
+                };
             }
 
             return view;

@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Widget;
+using ExcellaCareers.Droid.Common;
 using ExcellaCareers.Model;
 using Newtonsoft.Json;
 
@@ -21,19 +22,10 @@ namespace ExcellaCareers.Droid.Activities
             var jobs = JsonConvert.DeserializeObject<IEnumerable<Job>>(jobJson);
 
             var listAdapter = new JobListItemAdapter(this, Resource.Layout.CareerListItem, jobs.ToList());
-            var listView = FindViewById<ListView>(Resource.Id.listViewJobs);
-            listView.Adapter = listAdapter;
 
-            listView.ItemClick += (sender, e) =>
-            {
-                var item = listAdapter.GetItem(e.Position);
-                var sendIntent = new Intent();
-                sendIntent.SetAction(Intent.ActionSend);
-                sendIntent.PutExtra(Intent.ExtraText, $"Check out this opportunity with Excella! {item.Url}");
-                sendIntent.PutExtra(Intent.ExtraSubject, "Opportunities with Excella");
-                sendIntent.SetType("text/plain");
-                StartActivity(Intent.CreateChooser(sendIntent, "Share With..."));
-            };
+            var listView = FindViewById<ListView>(Resource.Id.listViewJobs);
+
+            listView.Adapter = listAdapter;
         }
     }
 }
