@@ -20,7 +20,7 @@ namespace ExcellaCareers.Droid.Activities
 
         public SplashActivty()
         {
-            this.htmlScraper = new HtmlScraper();
+            this.htmlScraper = new HtmlScraper(new WebRequestService());
             this.careerHtmlParser = new CareerHtmlParser();
         }
 
@@ -36,8 +36,15 @@ namespace ExcellaCareers.Droid.Activities
         {
             try
             {
-                var webResponse = await this.htmlScraper.Scrape(Resources.GetString(Resource.String.careers_url));
-                var jobs = this.careerHtmlParser.ParseHtml(webResponse);
+                var jobWebResponse = await this.htmlScraper.Scrape(Resources.GetString(Resource.String.careers_url));
+                var jobs = this.careerHtmlParser.ParseJobList(jobWebResponse);
+
+                foreach (var job in jobs)
+                {
+                    var detailWebResponse = await this.htmlScraper.Scrape(job.Url.ToString());
+                    job.Details = this.careerHtmlParser.ParseJobDetails(detailWebResponse);
+                }
+
                 return jobs;
             }
             catch (WebException)

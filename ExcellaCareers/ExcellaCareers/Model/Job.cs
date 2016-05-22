@@ -6,7 +6,7 @@ namespace ExcellaCareers.Model
     {
         public string Title { get; set; }
 
-        public string Description { get; set; }
+        public JobDetails Details { get; set; }
 
         public Uri Url { get; set; }
     }

@@ -7,11 +7,18 @@ namespace ExcellaCareers.Services.Impl
 {
     public class HtmlScraper : IHtmlScraper
     {
+        private IWebRequestService WebRequestService { get; }
+
+        public HtmlScraper(IWebRequestService webRequestService)
+        {
+            this.WebRequestService = webRequestService;
+        }
+
         public async Task<string> Scrape(string url)
         {
             var request = WebRequest.Create(url);
 
-            var response = await request.GetResponseAsync().ConfigureAwait(false);
+            var response = await this.WebRequestService.GetResponseAsync(request);
 
             var stream = response.GetResponseStream();
             var streamReader = new StreamReader(stream, Encoding.UTF8);

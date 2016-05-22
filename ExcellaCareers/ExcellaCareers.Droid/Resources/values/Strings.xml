@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="hello">Hello World, Click Me!</string>
-	<string name="app_name">ExcellaCareers.Droid</string>
+  <string name="hello">Hello World, Click Me!</string>
+  <string name="app_name">ExcellaCareers.Droid</string>
   <string name="careers_url">https://careers-excella.icims.com/jobs/search?in_iframe=1</string>
 </resources>

@@ -5,6 +5,9 @@ namespace ExcellaCareers.Services
 {
     public interface ICareerHtmlParser
     {
-        IEnumerable<Job> ParseHtml(string html);
+        IEnumerable<Job> ParseJobList(string html);
+
+        JobDetails ParseJobDetails(string html);
+
     }
 }

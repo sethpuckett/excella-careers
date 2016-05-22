@@ -32,12 +32,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Model\Job.cs" />
+    <Compile Include="Model\JobDetails.cs" />
     <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ICareerHtmlParser.cs" />
     <Compile Include="Services\IHtmlScraper.cs" />
     <Compile Include="Services\Impl\CareerHtmlParser.cs" />
     <Compile Include="Services\Impl\HtmlScraper.cs" />
+    <Compile Include="Services\Impl\WebRequestService.cs" />
+    <Compile Include="Services\IWebRequestService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
