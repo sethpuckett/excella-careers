@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <script type="text/javascript">
+function icims_stripIFrameParameter(url) {
+url = url.replace(/\?in_iframe=1\&?/, '?');
+url = url.replace(/\&in_iframe=1\&?/, '&');
+url = url.replace(/(\?|&)$/, '');
+return url;
+}
+
+document.cookie = "jsEnabled=true;path=/";
+var icimsWindow = false;
+try {
+icimsWindow = window.top.location.href.indexOf('') >= 0;
+} catch (e) {}
+
+if (icimsWindow) {
+try {
+
+if (window.history.replaceState) {
+parent.updateUrl(icims_stripIFrameParameter(window.location.href));
+}
+} catch (e) {}
+
+try {
+
+var windowUrl = window.top.location.href;
+if (windowUrl.match(/\?in_iframe=1\&?/) || windowUrl.match(/\&in_iframe=1\&?/)) {
+document.cookie = 'icims_iframeRedirReferer=' + encodeURIComponent(document.referrer) + ';path=/';
+window.top.location.href = icims_stripIFrameParameter(windowUrl);
+}
+} catch (e) {}
+
+}
+    </script>
+    <title>Careers | Excella Consulting |Business Intelligence Developer Lead</title>
+
+    <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-943.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <link rel="stylesheet" type="text/css" href="https://cdn09.icims.com/a/images.icims.com/content/provider_100.2.160504.89429/css/social-portal.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn01.icims.com/platform_100.2.160517.89838/excella.icims.com/icims2/servlet/icims2?module=AppInert&action=renderDynamicPortalCss&a=0&portal=17&page=job&group=base%2Cbase_media_query%2Cjob_header%2Clogin%2Csocial_distro_widget&asv=1463827936589&type=adaptive" />
+    <script type="text/javascript" src="https://cdn07.icims.com/a/images.icims.com/content/platform_100.2.160517.89838/script/lib/jquery/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="https://cdn07.icims.com/a/images.icims.com/content/platform_100.2.160517.89838/script/lib/domreplacement/domReplacement.js"></script>
+    <script type="text/javascript" src="https://cdn07.icims.com/a/images.icims.com/content/platform_100.2.160517.89838/script/common/icims.js"></script>
+    <script type="text/javascript" src="https://cdn07.icims.com/a/images.icims.com/content/platform_100.2.160517.89838/script/portal/utils.js"></script>
+    <script type="text/javascript" src="https://cdn03.icims.com/a/images.icims.com/content/platform_100.2.160517.89838/script/portal/dataLayer/apply.js"></script>
+    <script type="text/javascript" src="https://cdn03.icims.com/a/images.icims.com/content/platform_100.2.160517.89838/script/portal/dataLayer/youtube.js"></script>
+    <script type="text/javascript" src="https://cdn03.icims.com/a/images.icims.com/content/platform_100.2.160517.89838/script/portal/dataLayer/vimeo.js"></script>
+    <script type="text/javascript" src="https://cdn03.icims.com/a/images.icims.com/content/platform_100.2.160517.89838/script/portal/showMoreTextAbstract.js"></script>
+    <script type="text/javascript" src="https://cdn03.icims.com/a/images.icims.com/content/platform_100.2.160517.89838/script/portal/job.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript">
+var isMobile = false;
+    </script>
+    <meta name="robots" content="index,follow" />
+    <meta name="og:url" content="https://careers-excella.icims.com/jobs/1206/business-intelligence-developer-lead/job?mobile=true&needsRedirect=false" />
+    <meta property="keywords" content="Business Intelligence Developer Lead,job,jobs,job search,job match,job matching,employment,employment opportunities,job openings,job sites,job listings,find a job,career,manager,director,executive,recruiters,jobmagic.com,jobmagic,iCIMS,iCIMS.com,social.icims.com,Social,Distribution" />
+    <meta property="twitter:card" content="summary" />
+
+    <meta property="og:title" content="Business Intelligence Developer Lead" />
+    <meta property="twitter:title" content="Business Intelligence Developer Lead" />
+    <meta property="title" content="Business Intelligence Developer Lead" />
+
+
+    <meta property="og:description" content="The Business Intelligence Developer Lead is responsible for leading teams to enable technical solutions that support self-service analytics environments for our clients." />
+    <meta property="twitter:description" content="The Business Intelligence Developer Lead is responsible for leading teams to enable technical solutions that support self-service analytics environments for our clients." />
+    <meta property="description" content="The Business Intelligence Developer Lead is responsible for leading teams to enable technical solutions that support self-service analytics environments for our clients." />
+
+
+    <meta property="og:site_name" content="Experience" />
+
+
+    <meta property="og:image" content="http://www.excella.com/media/27890/tz1.png" />
+    <meta property="twitter:image" content="http://www.excella.com/media/27890/tz1.png" />
+
+    <link rel="canonical" href="https://careers-excella.icims.com/jobs/1206/business-intelligence-developer-lead/job?mobile=true&needsRedirect=false" />
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+
+var _iCIMSRecommendationEvents = _iCIMSRecommendationEvents || [];
+var icimsRecommendationEventParameters = new Array();
+icimsRecommendationEventParameters['id'] = 'icims-recommendation';
+icimsRecommendationEventParameters['data-icims-recommendation-service-url'] = 'https://provider.icims.com';
+icimsRecommendationEventParameters['data-icims-recommendation-service-cdn-url'] = 'https://cdn09.icims.com/a/images.icims.com/content/provider_100.2.160504.89429/';
+icimsAsyncLoadScript('https://cdn09.icims.com/a/images.icims.com/content/provider_100.2.160504.89429/scripts/recommendation/recommendation.js', icimsRecommendationEventParameters);
+
+
+
+
+
+
+_iCIMSRecommendationEvents.push(['VIEW_JOB', '1206' + '-' + '4273', 'Business Intelligence Developer Lead', function(){return $("span[itemprop|='address']").text()}]);
+
+
+
+    </script>
+
+
+    <script type="text/javascript">
+icimsAsyncLoadScript('https://cdn07.icims.com/a/images.icims.com/content/platform_100.2.160517.89838/script/portal/login.js');
+icimsAddOnload(function() {
+if (isMobile) {
+var showMoreTextAbstract = new ShowMoreTextAbstract();
+showMoreTextAbstract.initialize(60, '&#9660;&nbsp;<u>Read more</u>', '&#9650;&nbsp;<u>Read less</u>');
+}
+});
+var icimsSD = {"person":{},"companyName":"Excella Consulting","env":"prod","job":{"jid":1206,"jobUrls":[{"name":"Experience","url":"https://careers-excella.icims.com/jobs/1206/business-intelligence-developer-lead/job"}],"location":"DC Metro Area, United States","title":"Business Intelligence Developer Lead"},"version":"1.015","key":"1","cid":"IG/Oc7srkTx7TH9svbSkVujS8f+3HNWM80RacDmV5KfShp+NNuG9v+kwqYII"};
+window.mobile = false;
+loadWidget();
+function loadWidget() {
+if(typeof icimsSD !== 'undefined') {
+icimsSD["callback"] = sdWidgetReadyCallback;
+$.ajaxSetup({
+cache: true
+});
+$.getScript('https://cdn06.icims.com/social_1/social.icims.com/javascript/socialDistro.js');
+}
+}
+    </script>
+    <script type="text/javascript">
+function icims_resizeIFrameHeight() {
+
+icims_resizeIFrame('https://careers-excella.icims.com');
+
+}
+function icims_scroll(x, y) {
+icims_scrollIFrame(x, y, 'https://careers-excella.icims.com');
+}
+icimsAddOnload(function() {
+icimsCheckCookie();
+icims_resizeIFrameHeight();
+
+});
+var icimsIframeResizeTimer = setInterval(icims_resizeIFrameHeight, 500);
+
+try {
+if (window.orientation) {
+window.addEventListener("orientationchange", icims_resizeIFrameHeight, false);
+}
+} catch (e) {}
+
+var isHub = false;
+if (!window.history.replaceState || isHub) {
+icimsAddOnload(function() {
+var links = document.getElementsByTagName("a");
+for (var i = 0; i < links.length; i++) {
+if (!links[i].target) {
+var href = links[i].getAttribute('href')
+if (href) {
+var prevInnerHTML = links[i].innerHTML;
+links[i].setAttribute('href', icims_stripIFrameParameter(href));
+
+links[i].innerHTML = prevInnerHTML;
+}
+links[i].target = icimsWindow ? "_top" : "_parent";
+}
+}
+});
+}
+
+icimsAddOnload(function() {
+try {
+if (icimsWindow && parent) {
+parent.document.title = document.title;
+}
+} catch (e) {}
+});
+    </script>
+</head>
+<body class="iCIMS_Body">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+dataLayer = [{"hasVideo":"no","environment":"prod","pageType":"jobDetailsPage","instance":{"id":"DfBfetksTHbAJzXd","type":"careers"},"releasePhase":"Wave1","build":"platform_100.2.160517.89838","customerGAAccount":"UA-12164540-3","release":"100.2","icimsGAAnonymizeIP":false,"customerId":"2DR4CcAFPaLvfqgYf","job":{"positionType":"Full-Time","company":"Excella Consulting","location":{"zip":"not set","country":"USA","city":"DC Metro Area","state":"not set"},"id":"M3SXzfhnSmjNxEuA","title":"Business Intelligence Developer Lead","category":"Business Intelligence","postedDate":"2016-05-23"},"icimsGAAccount":"UA-35875149-10"}];
+    </script>
+
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id="
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W8W92P');</script>
+    <!-- End Google Tag Manager -->
+    <script type="text/javascript">
+try {
+document.body.className += " iCIMS_chrome iCIMS_chrome50";
+} catch(e) {}
+    </script>
+    <div id="iCIMS_NoCookiesMessage" class="iCIMS_ErrorMsg iCIMS_ErrorMessage iCIMS_NoCookies" style="display: none">
+        <div class="iCIMS_ErrorMsgTitle">Please Enable Cookies to Continue</div>
+        Please enable cookies in your browser to experience all the personalized features of this site, including the ability to apply for a job.
+    </div>
+
+    <!-- Job Core -->
+    <div class="iCIMS_MainWrapper iCIMS_JobPage iCIMS_Desktop ">
+
+
+
+
+        <div class="iCIMS_profilePicture">
+            <div class="iCIMS_userMenu">
+                <div class="iCIMS_userMenuName">Returning Candidate?</div>
+                <div class="iCIMS_userMenuLink">
+                    <a href="https://careers-excella.icims.com/jobs/1206/business-intelligence-developer-lead/login?loginOnly=1&amp;redirect=job&amp;in_iframe=1&amp;hashed=-435744354">Log back in!</a>
+                </div>
+            </div>
+            <div class="iCIMS_FloatHack"></div>
+        </div>
+
+
+
+        <h1 class="iCIMS_Header" itemprop="title">Business Intelligence Developer Lead</h1>
+        <div class="iCIMS_JobContainer">
+            <div class="iCIMS_JobContent">
+                <h1 class="iCIMS_Header" itemprop="title">Business Intelligence Developer Lead</h1>
+
+                <div class="iCIMS_ShadowContainer iCIMS_JobHeader">
+
+                    <div class="iCIMS_JobHeaderTable iCIMS_Table">
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="iCIMS_TableRow">
+                            <dl class="iCIMS_JobHeaderGroup iCIMS_TableCell">
+                                <dt class="iCIMS_JobHeaderField iCIMS_TableHeader" scope="row">Location&nbsp;</dt>
+                                <dd class="iCIMS_JobHeaderData" itemprop="jobLocation">
+                                    <span itemprop="jobLocation">
+                                        <span itemprop="jobLocation" itemscope itemtype="http://schema.org/Place"><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemProp="addressCountry">US</span>-<span itemProp="addressLocality">DC Metro Area</span></span></span>
+                                    </span>
+                                </dd>
+                                <div style="clear: both;"></div>
+
+                                <dt class="iCIMS_TableCell"></dt>
+                                <dd class="iCIMS_TableCell"></dd>
+                        </div>
+
+                        </dl>
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <h2 class="iCIMS_SubHeader iCIMS_SubHeader_Job">
+                    More information about this job
+                </h2>
+
+
+
+                <h5 class="iCIMS_InfoMsg iCIMS_InfoField_Job">
+                    <span style="font-size: 1.2em"> About Excella</span>
+                </h5>
+                <div class="iCIMS_InfoMsg iCIMS_InfoMsg_Job">
+                    <div class="iCIMS_Expandable_Container">
+                        <div class="iCIMS_Expandable_Text">
+                            <p style="margin: 0px;"><span style="font-family: helvetica;">At Excella, we believe that great work leads to great&nbsp;things &ndash;- for our clients and our employees. We are growing fast and need passionate, innovative people who love working with technology and are ready to make an impact.</span></p><p style="margin: 0px;"><span style="font-family: helvetica;">&nbsp;</span></p><p style="margin: 0px;"><span style="font-family: helvetica;">Here's what you can expect from us:</span></p><ul><li><span style="font-family: helvetica;">We care about our employees. In fact,&nbsp;<em>The Washington Post&nbsp;</em>and&nbsp;<em>The Washington Business Journal&nbsp;</em>consistently rank us as a "Best Place to Work."</span></li><li><span style="font-family: helvetica;">You'll work with great people who love what they do: our team includes published authors, certified trainers, and internationally renowned speakers.</span></li><li><span style="font-family: helvetica;">We have a "bring your own device" workplace and will share the cost of a new computer of your choice -- Mac or PC. It's up to you.</span></li><li><span style="font-family: helvetica;">We'll invest in your career by providing 3 days of paid professional development every year, including travel and registration fees to attend classes and conferences, in addition to tuition assistance for degrees and certifications.</span></li><li><span style="font-family: helvetica;">Starting day one, every employee is bonus eligible and receives 17 days of paid vacation.</span></li><li><span style="font-family: helvetica;">You can bike, drive, or metro to work -- our commute reimbursement plan has you covered.</span></li><li><span style="font-family: helvetica;">We cater dinner once a month, and always have healthy snacks available!</span></li><li><span><span style="font-family: helvetica;">You'll have fun! We hold monthly happy hours and events all year long, including a summer weekend getaway for you and your family, and a formal winter party for you and a gue</span>s<span style="font-family: helvetica;">t.</span></span></li></ul>
+                            <div id="iCIMS_Expandable_Button"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <h5 class="iCIMS_InfoMsg iCIMS_InfoField_Job">
+                    <span style="font-size: 1.2em">Overview</span>
+                </h5>
+                <div class="iCIMS_InfoMsg iCIMS_InfoMsg_Job">
+                    <div class="iCIMS_Expandable_Container">
+                        <div class="iCIMS_Expandable_Text">
+                            <p style="margin: 0px;"><span style="font-size: 10pt; font-family: helvetica;">The Business Intelligence Developer Lead is responsible for leading teams to enable technical solutions that support self-service analytics environments for our clients. </span></p>
+                            <div id="iCIMS_Expandable_Button"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <h5 class="iCIMS_InfoMsg iCIMS_InfoField_Job">
+                    <span style="font-size: 1.2em">Responsibilities</span>
+                </h5>
+                <div class="iCIMS_InfoMsg iCIMS_InfoMsg_Job" itemprop="responsibilities">
+                    <div class="iCIMS_Expandable_Container">
+                        <div class="iCIMS_Expandable_Text">
+                            <p style="margin: 0px;"><span style="font-size: 10.0pt; font-family: Verdana;"><span style="font-family: helvetica;">BI Tool Selection &amp; Deployment</span></span></p><ul><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Interacts directly with client stakeholders (business or technical) to understand stakeholder needs and current environment to recommend best-fit BI tools and platforms.</span></li><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Able to lead formal BI Tool selection and evaluation process when required</span></li><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Works with chosen BI Tool vendor to install chosen solution</span></li><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Tailors installation to client stakeholder needs</span></li></ul><p style="margin: 0px;"><span style="font-size: 10pt; font-family: helvetica;">&nbsp;</span></p><p style="margin: 0px;"><span style="font-size: 10pt; font-family: helvetica;">BI Content Delivery</span></p><ul><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Able to perform the following work and/or lead teams of BI Developers to perform this work:</span><ul><li style="margin-left: .75in;"><span style="font-size: 10pt; font-family: helvetica;">Uses SQL and other query tools to understand raw data sources identified. </span></li><li style="margin-left: .75in;"><span style="font-size: 10pt; font-family: helvetica;">Works with architect and data integration developer to design data structures that support report and dashboard requirements (i.e. has the data elements available, query performance is acceptable etc.)</span></li><li style="margin-left: .75in;"><span style="font-size: 10pt; font-family: helvetica;">Creates simple to complex reports and dashboards using BI Tools like Tableau, Cognos, BO etc.</span></li><li style="margin-left: .75in;"><span style="font-size: 10pt; font-family: helvetica;">Creates prototypes based upon stakeholder requirements in order to confirm the report or dashboard design meets the business need.</span></li><li style="margin-left: .75in;"><span style="font-size: 10pt; font-family: helvetica;">Where applicable, designs and builds OLAP structures (cubes) to support BI deliverables using tools like SSAS, Cognos Cube Designer etc.</span></li><li style="margin-left: .75in;"><span style="font-size: 10pt; font-family: helvetica;">Uses SQL connecting directly to data source in order to confirm counts shown in BI Tool.</span></li><li style="margin-left: .75in;"><span style="font-size: 10pt; font-family: helvetica;">Ensures the final BI solution follows best practices, is automated and is easily transitioned into the client's environment for ongoing maintenance.</span></li><li style="margin-left: .75in;"><span style="font-size: 10pt; font-family: helvetica;">Creates and delivers end-user training and documentation on BI deliverables.</span></li></ul></li></ul><p style="margin: 0px;"><strong>&nbsp;</strong></p>
+                            <div id="iCIMS_Expandable_Button"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <h5 class="iCIMS_InfoMsg iCIMS_InfoField_Job">
+                    <span style="font-size: 1.2em">Qualifications</span>
+                </h5>
+                <div class="iCIMS_InfoMsg iCIMS_InfoMsg_Job" itemprop="qualifications">
+                    <div class="iCIMS_Expandable_Container">
+                        <div class="iCIMS_Expandable_Text">
+                            <p style="margin: 0px;"><span style="font-family: helvetica;"><strong><span style="text-decoration: underline;"><span style="font-size: 10pt;">Qualifications (Technical)</span></span></strong></span></p><p style="margin: 0px;"><span style="text-decoration: underline; font-family: helvetica;"><span style="font-size: 10pt;">&nbsp;</span></span></p><ul><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">10+ years developing reports or dashboards using Business Intelligence Tools (e.g. Tableau, Business Objects, Cognos, Qlikview, Microstrategy).</span></li><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">10+ years writing simple to complex SQL queries.</span></li><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Expert understanding of relational, multidimensional (OLAP) and Big Data structures (Hadoop/Spark) in order to source effectively from these for reports and dashboards. </span></li><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Expert in BI tool administration functions including:</span></li><li><span style="font-size: 10pt; font-family: helvetica;">Publishing of content to shared environment</span></li><li><span style="font-size: 10pt; font-family: helvetica;">User access and tool security</span></li><li><span style="font-size: 10pt; font-family: helvetica;">Data mapping/catalog changes (semantic layer)</span></li><li><span style="font-size: 10pt; font-family: helvetica;">Archive and purge activities</span></li><li><span style="font-size: 10pt; font-family: helvetica;">Performance tuning assessment and implementation</span></li><li><span style="font-size: 10pt; font-family: helvetica;">Other tool maintenance, including installation of patches</span></li><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Experience working hands on in multiple BI platforms</span></li><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Experience with performance tuning SQL, including the use of explains plans, partitions, hints etc.</span></li></ul><p style="margin: 0px;"><span style="font-size: 10pt; font-family: helvetica;">&nbsp;</span></p><p style="margin: 0px;"><span style="font-family: helvetica;"><strong><span style="text-decoration: underline;"><span style="font-size: 10pt;">Qualifications (Non-Technical)</span></span></strong></span></p><p style="margin: 0px;"><span style="font-family: helvetica;"><strong><span style="text-decoration: underline;"><span style="font-size: 10pt;">&nbsp;</span></span></strong></span></p><ul><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Excellent communication skills to be able to interact directly with non-technical client stakeholders and act in a business-to-technical translation role.</span></li><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Proficient leading and mentoring small teams of technical professionals.</span></li><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Experience deploying BI platforms.</span></li><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Experience working within the Agile Scrum Framework.</span></li><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Self-motivated and self-managing.</span></li><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Proficient in participating in design and code reviews.</span></li><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Proficient in identifying and communicating scope changes.</span></li><li style="margin-left: .25in;"><span style="font-size: 10pt; font-family: helvetica;">Proficient in creating reasonable and accurate time estimates for assigned tasks.</span></li></ul><p style="margin: 0px;"><span style="font-size: 10.0pt; font-family: Verdana;">&nbsp;</span></p>
+                            <div id="iCIMS_Expandable_Button"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="iCIMS_JobOptions">
+
+                    <h2 class="iCIMS_SubHeader iCIMS_SubHeader_Job">Options</h2>
+
+                    <div id="jobOptionsMobile" class="iCIMS_JobOptionsMobile">
+
+
+
+
+                        <a href="https://careers-excella.icims.com/jobs/1206/business-intelligence-developer-lead/job?mode=apply&apply=yes&in_iframe=1&hashed=-336179892" class="iCIMS_Anchor iCIMS_Action_Button iCIMS_ApplyOnlineButton" title="Apply for this job online"><div class="iCIMS_Action_ButtonText"><span class="iCIMS_LongLabel">Apply for this job online</span><span class="iCIMS_ShortLabel">Apply</span></div></a><a onclick="showSocialOptions()" id="mobileShowSocialOptionsButton" class="iCIMS_Anchor iCIMS_Action_Button iCIMS_JobShareButton iCIMS_NoDisplay" title="Share"><div class="iCIMS_Action_ButtonText"><span class="iCIMS_ShortLabel">Share</span></div></a><a href="https://careers-excella.icims.com/jobs/1206/business-intelligence-developer-lead/referral?in_iframe=1&hashed=-435744354" class="iCIMS_Anchor iCIMS_Action_Button" title="Email job to a friend"><div class="iCIMS_Action_ButtonText"><span class="iCIMS_LongLabel">Email job to a friend</span><span class="iCIMS_ShortLabel">Refer</span></div></a>
+
+
+
+
+
+
+                    </div>
+                    <div id="jobSocialOptions" class="iCIMS_jobSocialOptions iCIMS_NoDisplay">
+
+                        <div class="iCIMS_Divider"></div>
+                        <div class="iCIMS_BroadcastJob_Label">Share on your newsfeed</div>
+                        <div class="iCIMS_BroadcastJob icimsSD_widget" id="icimsSD_widget_share" data-icims-sd-type="share" data-icims-sd-jid="1206" data-icims-sd-size="24"></div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="iCIMS_PageFooter">
+
+                </div>
+                <div class="iCIMS_Navigation">
+
+
+                    <div class="iCIMS_NavigationIconContainer"><a class="iCIMS_Anchor_Nav" href="https://careers-excella.icims.com/jobs/intro?in_iframe=1"><img alt="" src="https://cdn07.icims.com/platform_100.2.160517.89838/careers-excella.icims.com/jobs/image?img=ccciconthemes/images3/back&amp;color=FFFFFF-eeeeee-333333&amp;a=" class="iCIMS_NavIcon" width="20" height="20" />Go back to the welcome page</a></div>
+
+                </div>
+                <div class="iCIMS_Logo"><a class="iCIMS_Faq_Link" title="Application FAQs (Opens new window)" href="https://media.icims.com/training/candidatefaq/faq.html" target="_blank">Application FAQs</a></div>
+
+            </div>
+            <div id="popupOverlay" class="iCIMS_Portal_PopupOverLay iCIMS_NoDisplay"></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript">
+if (icimsWindow) {
+try {
+window.parent.document.getElementById('icims_content_iframe').title = document.title;
+} catch (e) {}
+}
+    </script>
+
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"4e547d37d0","agent":"","beacon":"bam.nr-data.net","applicationTime":48,"applicationID":"3924771,3408490,16254456","transactionName":"ZQdXYRMAD0ZUBkAIVlxNdkASFQ5YGhVbE01TDhpfDgNOcnAx","queueTime":0}</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+// New Relic PageViewName Logging. Ensure this cannot ever halt page execution.
+try {
+var pageViewName ='portal/job/GET';
+newrelic.setPageViewName(pageViewName);
+} catch (e) {}
+    </script>
+</body>
+</html>
+
+

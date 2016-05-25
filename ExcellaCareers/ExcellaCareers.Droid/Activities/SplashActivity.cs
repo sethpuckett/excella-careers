@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 using Android.App;
@@ -39,11 +40,12 @@ namespace ExcellaCareers.Droid.Activities
                 var jobWebResponse = await this.htmlScraper.Scrape(Resources.GetString(Resource.String.careers_url));
                 var jobs = this.careerHtmlParser.ParseJobList(jobWebResponse);
 
-                foreach (var job in jobs)
-                {
-                    var detailWebResponse = await this.htmlScraper.Scrape(job.Url.ToString());
-                    job.Details = this.careerHtmlParser.ParseJobDetails(detailWebResponse);
-                }
+                // TODO: Detail scraping doesn't work. Need a way to get data from iframe
+                //foreach (var job in jobs)
+                //{
+                //    var detailWebResponse = await this.htmlScraper.Scrape(job.Url.ToString());
+                //    job.Details = this.careerHtmlParser.ParseJobDetails(detailWebResponse);
+                //}
 
                 return jobs;
             }

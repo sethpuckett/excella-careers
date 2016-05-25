@@ -32,7 +32,6 @@ namespace ExcellaCareers.Droid.Common
             {
                 var title = (TextView) view.FindViewById(Resource.Id.title);
                 var shareButton = view.FindViewById<ImageView>(Resource.Id.imageButtonShare);
-                var infoButton = view.FindViewById<ImageView>(Resource.Id.imageButtonInfo);
 
                 title?.SetText(job.Title, TextView.BufferType.Normal);
 

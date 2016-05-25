@@ -32,7 +32,9 @@ namespace ExcellaCareers.Tests.Services
 
             // Assert
             Assert.That(jobs, Is.Not.Null);
-            Assert.That(jobs, Is.Not.Empty);
+            Assert.That(jobs.Count, Is.EqualTo(27));
+            Assert.That(jobs.Where(j => j.Title == "Title"), Is.Empty); // Header row should be ignored
+            Assert.That(jobs.Where(j => j.Title == "Senior Java Developer"), Is.Not.Empty); // Check trimming
         }
 
         private string GetJobListHtml()

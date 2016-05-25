@@ -32,19 +32,8 @@ namespace ExcellaCareers.Services.Impl
 
         public JobDetails ParseJobDetails(string html)
         {
-            var htmlDoc = new HtmlDocument();
-            htmlDoc.LoadHtml(html);
-
-            if (htmlDoc.DocumentNode == null)
-            {
-                return null;
-            }
-
-            var overviewNode = this.GetOverviewNode(htmlDoc);
-
-            var details = new JobDetails();
-
-            return details;
+            // TODO: Implement when you figure out how to load job detail iframe content
+            throw new NotImplementedException();
         }
 
         private IEnumerable<HtmlNode> GetJobCells(HtmlDocument htmlDoc)
@@ -54,22 +43,6 @@ namespace ExcellaCareers.Services.Impl
                 t.Attributes["class"].Value.Contains("iCIMS_JobsTable"));
             var body = jobsTable.Descendants("tBody").First();
             return body.Descendants("tr").Select(tr => tr.Descendants("td").First());
-        }
-
-        private HtmlNode GetOverviewNode(HtmlDocument htmlDoc)
-        {
-            //iCIMS_InfoMsg iCIMS_InfoMsg_Job
-            var node = htmlDoc.DocumentNode.Descendants("//h5[contains(text(),'Overview') and @class='iCIMS_InfoMsg iCIMS_InfoField_Job']");
-
-            //var overviewHeader = htmlDoc.DocumentNode.Descendants("//div[@class='iCIMS_InfoMsg iCIMS_InfoField_Job']");
-
-            //var jobsTable = htmlDoc.DocumentNode.Descendants("//div[(@class='iCIMS_InfoMsg_Job']").First(t =>
-            //    t.Attributes.Contains("class") &&
-            //    t.Attributes["class"].Value.Contains("iCIMS_JobsTable"));
-            //var body = jobsTable.Descendants("tBody").First();
-            //return body.Descendants("tr").Select(tr => tr.Descendants("td").First());
-
-            throw new NotImplementedException();
         }
     }
 }
