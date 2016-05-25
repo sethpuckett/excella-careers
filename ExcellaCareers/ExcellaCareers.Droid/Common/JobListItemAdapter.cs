@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Android.Content;
@@ -35,15 +36,18 @@ namespace ExcellaCareers.Droid.Common
 
                 title?.SetText(job.Title, TextView.BufferType.Normal);
 
-                shareButton.Click += (sender, e) =>
+                if (!shareButton.HasOnClickListeners)
                 {
-                    var sendIntent = new Intent();
-                    sendIntent.SetAction(Intent.ActionSend);
-                    sendIntent.PutExtra(Intent.ExtraText, $"Check out this opportunity with Excella!{System.Environment.NewLine}{job.Url}");
-                    sendIntent.PutExtra(Intent.ExtraSubject, "Opportunities with Excella");
-                    sendIntent.SetType("text/plain");
-                    this.Context.StartActivity(Intent.CreateChooser(sendIntent, "Share With..."));
-                };
+                    shareButton.Click += (sender, e) =>
+                    {
+                        var sendIntent = new Intent();
+                        sendIntent.SetAction(Intent.ActionSend);
+                        sendIntent.PutExtra(Intent.ExtraText, $"Check out this {job.Title} opportunity with Excella!{Environment.NewLine}{job.Url.GetLeftPart(UriPartial.Path)}");
+                        sendIntent.PutExtra(Intent.ExtraSubject, "Opportunities with Excella");
+                        sendIntent.SetType("text/plain");
+                        this.Context.StartActivity(Intent.CreateChooser(sendIntent, "Share With..."));
+                    };
+                }
             }
 
             return view;
