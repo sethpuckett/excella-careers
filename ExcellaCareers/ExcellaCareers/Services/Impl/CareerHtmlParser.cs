@@ -32,7 +32,7 @@ namespace ExcellaCareers.Services.Impl
 
         public JobDetails ParseJobDetails(string html)
         {
-            // TODO: Implement when you figure out how to load job detail iframe content
+            // TODO: Implement when detail scraping works
             throw new NotImplementedException();
         }
 

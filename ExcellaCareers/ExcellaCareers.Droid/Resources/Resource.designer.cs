@@ -1441,19 +1441,16 @@ namespace ExcellaCareers.Droid
 			public const int ExcellaLogo = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int Icon = 2130837580;
-			
-			// aapt resource value: 0x7f02004d
-			public const int Info = 2130837581;
-			
-			// aapt resource value: 0x7f020050
-			public const int notification_template_icon_bg = 2130837584;
-			
-			// aapt resource value: 0x7f02004e
-			public const int Share = 2130837582;
+			public const int Info = 2130837580;
 			
 			// aapt resource value: 0x7f02004f
-			public const int Splash = 2130837583;
+			public const int notification_template_icon_bg = 2130837583;
+			
+			// aapt resource value: 0x7f02004d
+			public const int Share = 2130837581;
+			
+			// aapt resource value: 0x7f02004e
+			public const int Splash = 2130837582;
 			
 			static Drawable()
 			{

@@ -5,10 +5,14 @@ using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.Support.V7.App;
+using Android.Views;
+using Android.Webkit;
+using Android.Widget;
 using ExcellaCareers.Model;
 using ExcellaCareers.Services;
 using ExcellaCareers.Services.Impl;
 using Newtonsoft.Json;
+using Plugin.Connectivity;
 
 namespace ExcellaCareers.Droid.Activities
 {
@@ -29,30 +33,38 @@ namespace ExcellaCareers.Droid.Activities
         {
             base.OnResume();
 
-            var jobs = await this.LoadJobs();
-            this.LaunchMainActivity(jobs);
+            var connectivity = CrossConnectivity.Current;
+            if (!connectivity.IsConnected)
+            {
+                this.ShowNetworkError();
+                return;
+            }
+
+            try
+            {
+                var jobs = await this.LoadJobs();
+                this.LaunchMainActivity(jobs);
+            }
+            catch (WebException)
+            {
+                throw;
+            }
+
         }
 
         private async Task<IEnumerable<Job>> LoadJobs()
         {
-            try
-            {
-                var jobWebResponse = await this.htmlScraper.Scrape(Resources.GetString(Resource.String.careers_url));
-                var jobs = this.careerHtmlParser.ParseJobList(jobWebResponse);
+            var jobWebResponse = await this.htmlScraper.Scrape(Resources.GetString(Resource.String.careers_url));
+            var jobs = this.careerHtmlParser.ParseJobList(jobWebResponse);
 
-                // TODO: Detail scraping doesn't work. Need a way to get data from iframe
-                //foreach (var job in jobs)
-                //{
-                //    var detailWebResponse = await this.htmlScraper.Scrape(job.Url.ToString());
-                //    job.Details = this.careerHtmlParser.ParseJobDetails(detailWebResponse);
-                //}
+            // TODO: Detail scraping doesn't work. Need a way to get data from iframe
+            //foreach (var job in jobs)
+            //{
+            //    var detailWebResponse = await this.htmlScraper.Scrape(job.Url.ToString());
+            //    job.Details = this.careerHtmlParser.ParseJobDetails(detailWebResponse);
+            //}
 
-                return jobs;
-            }
-            catch (WebException)
-            {
-                return null;
-            }
+            return jobs;
         }
 
         private void LaunchMainActivity(IEnumerable<Job> jobs)
@@ -61,6 +73,16 @@ namespace ExcellaCareers.Droid.Activities
             intent.PutExtra("jobs", JsonConvert.SerializeObject(jobs));
             StartActivity(intent);
         }
-        
+
+
+        private void ShowNetworkError()
+        {
+            var alert = new Android.App.AlertDialog.Builder(this);
+            alert.SetTitle("Network Error");
+            alert.SetMessage("Unable to load careers! Please check your internet connection.");
+            alert.SetPositiveButton("Okay", (senderAlert, args) => { });
+            Dialog dialog = alert.Create();
+            dialog.Show();
+        }
     }
 }
