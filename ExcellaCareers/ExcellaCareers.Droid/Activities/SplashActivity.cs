@@ -47,7 +47,7 @@ namespace ExcellaCareers.Droid.Activities
             }
             catch (WebException)
             {
-                throw;
+                this.ShowNetworkError();
             }
 
         }
