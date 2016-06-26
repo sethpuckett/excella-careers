@@ -87,7 +87,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activities\ErrorActivity.cs" />
     <Compile Include="Common\JobListItemAdapter.cs" />
     <Compile Include="Activities\CareerListActivity.cs" />
     <Compile Include="Common\ObjectTypeHelper.cs" />
