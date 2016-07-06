@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="ExcellaCareers/ExcellaCareers.iOS/ExcellaCareers.iOS.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ExcellaCareers.Tests/Services/CareerHtmlParserTests.cs">
+    <Files>
+      <File FileName="ExcellaCareers/ExcellaCareers/Services/Impl/CareerHtmlParser.cs" Line="8" Column="2" />
+      <File FileName="ExcellaCareers.Tests/Services/CareerHtmlParserTests.cs" Line="4" Column="7" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ExcellaCareers.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.CEA78926-E348-4CC5-B86B-0D64057242BC" />
+</Properties>
