@@ -150,6 +150,8 @@
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-256.png" />
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-512.png" />
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-1024.png" />
+    <ImageAsset Include="Resources\Images.xcassets\ExcellaLogo.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\ExcellaLogo.imageset\ExcellaLogo.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -167,6 +169,9 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Images.xcassets\ExcellaLogo.imageset\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
