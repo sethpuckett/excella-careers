@@ -20,7 +20,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" placeholderIntrinsicWidth="125" placeholderIntrinsicHeight="125" image="ExcellaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="45">
                                 <rect key="frame" x="224" y="0.0" width="150" height="150"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="131" y="0.0" width="150" height="150"/>
+                                    <rect key="frame" x="111.5" y="0.0" width="150" height="150"/>
                                 </variation>
                                 <constraints>
                                     <constraint id="181" firstAttribute="width" constant="150"/>
@@ -40,11 +40,30 @@
                                     <rect key="frame" x="1" y="164" width="766" height="2"/>
                                 </variation>
                             </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="194" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="315" width="151" height="38"/>
+                                </variation>
+                                <attributedString key="attributedText">
+                                    <fragment content="   Loading...">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="0.00784313725490196" green="0.12549019607843137" blue="0.30980392156862746" alpha="1"/>
+                                            <font key="NSFont" name="HelveticaNeue" family="Helvetica Neue" size="25"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="48"/>
+                                <include reference="194"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="171"/>
@@ -62,6 +81,11 @@
                                 <include reference="171"/>
                             </mask>
                         </variation>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="194"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAI-xm-WK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -74,6 +98,6 @@
     </resources>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedScreenMetrics key="destination" type="iPad"/>
+        <simulatedScreenMetrics key="destination" type="retina47"/>
     </simulatedMetricsContainer>
 </document>
