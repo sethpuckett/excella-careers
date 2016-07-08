@@ -1,115 +1,128 @@
 {
   "images": [
     {
-      "filename": "Icon-Small.png",
+      "filename": "ExcellaLogo-29.png",
       "size": "29x29",
       "scale": "1x",
       "idiom": "iphone"
     },
     {
-      "filename": "Icon-Small@2x.png",
+      "filename": "ExcellaLogo-58.png",
       "size": "29x29",
       "scale": "2x",
       "idiom": "iphone"
     },
     {
+      "filename": "ExcellaLogo-87.png",
       "size": "29x29",
       "scale": "3x",
       "idiom": "iphone"
     },
     {
-      "filename": "AppIcon40x40@2x.png",
+      "filename": "ExcellaLogo-80.png",
       "size": "40x40",
       "scale": "2x",
       "idiom": "iphone"
     },
     {
+      "filename": "ExcellaLogo-120.png",
       "size": "40x40",
       "scale": "3x",
       "idiom": "iphone"
     },
     {
-      "filename": "Icon.png",
+      "filename": "ExcellaLogo-57.png",
       "size": "57x57",
       "scale": "1x",
       "idiom": "iphone"
     },
     {
+      "filename": "ExcellaLogo-114.png",
       "size": "57x57",
       "scale": "2x",
       "idiom": "iphone"
     },
     {
-      "filename": "Icon-60@2x.png",
+      "filename": "ExcellaLogo-120.png",
       "size": "60x60",
       "scale": "2x",
       "idiom": "iphone"
     },
     {
+      "filename": "ExcellaLogo-180.png",
       "size": "60x60",
       "scale": "3x",
       "idiom": "iphone"
     },
     {
-      "filename": "Icon-Small.png",
+      "filename": "ExcellaLogo-29.png",
       "size": "29x29",
       "scale": "1x",
       "idiom": "ipad"
     },
     {
+      "filename": "ExcellaLogo-58.png",
       "size": "29x29",
       "scale": "2x",
       "idiom": "ipad"
     },
     {
+      "filename": "ExcellaLogo-40.png",
       "size": "40x40",
       "scale": "1x",
       "idiom": "ipad"
     },
     {
+      "filename": "ExcellaLogo-80.png",
       "size": "40x40",
       "scale": "2x",
       "idiom": "ipad"
     },
     {
+      "filename": "ExcellaLogo-50.png",
       "size": "50x50",
       "scale": "1x",
       "idiom": "ipad"
     },
     {
+      "filename": "ExcellaLogo-100.png",
       "size": "50x50",
       "scale": "2x",
       "idiom": "ipad"
     },
     {
+      "filename": "ExcellaLogo-167.png",
       "size": "83.5x83.5",
       "scale": "2x",
       "idiom": "ipad"
     },
     {
-      "filename": "Icon-72.png",
+      "filename": "ExcellaLogo-72.png",
       "size": "72x72",
       "scale": "1x",
       "idiom": "ipad"
     },
     {
+      "filename": "ExcellaLogo-144.png",
       "size": "72x72",
       "scale": "2x",
       "idiom": "ipad"
     },
     {
-      "filename": "Icon-76.png",
+      "filename": "ExcellaLogo-76.png",
       "size": "76x76",
       "scale": "1x",
       "idiom": "ipad"
     },
     {
+      "filename": "ExcellaLogo-152.png",
       "size": "76x76",
       "scale": "2x",
       "idiom": "ipad"
     },
     {
       "role": "notificationCenter",
+      "filename": "ExcellaLogo-48.png",
       "size": "24x24",
       "subtype": "38mm",
       "scale": "2x",
@@ -117,6 +130,7 @@
     },
     {
       "role": "notificationCenter",
+      "filename": "ExcellaLogo-55.png",
       "size": "27.5x27.5",
       "subtype": "42mm",
       "scale": "2x",
@@ -124,18 +138,21 @@
     },
     {
       "role": "companionSettings",
+      "filename": "ExcellaLogo-58.png",
       "size": "29x29",
       "scale": "2x",
       "idiom": "watch"
     },
     {
       "role": "companionSettings",
+      "filename": "ExcellaLogo-87.png",
       "size": "29x29",
       "scale": "3x",
       "idiom": "watch"
     },
     {
       "role": "appLauncher",
+      "filename": "ExcellaLogo-80.png",
       "size": "40x40",
       "subtype": "38mm",
       "scale": "2x",
@@ -143,6 +160,7 @@
     },
     {
       "role": "longLook",
+      "filename": "ExcellaLogo-88.png",
       "size": "44x44",
       "subtype": "42mm",
       "scale": "2x",
@@ -150,6 +168,7 @@
     },
     {
       "role": "quickLook",
+      "filename": "ExcellaLogo-172.png",
       "size": "86x86",
       "subtype": "38mm",
       "scale": "2x",
@@ -157,57 +176,68 @@
     },
     {
       "role": "quickLook",
+      "filename": "ExcellaLogo-196.png",
       "size": "98x98",
       "subtype": "42mm",
       "scale": "2x",
       "idiom": "watch"
     },
     {
+      "filename": "ExcellaLogo-16.png",
       "size": "16x16",
       "scale": "1x",
       "idiom": "mac"
     },
     {
+      "filename": "ExcellaLogo-32.png",
       "size": "16x16",
       "scale": "2x",
       "idiom": "mac"
     },
     {
+      "filename": "ExcellaLogo-32.png",
       "size": "32x32",
       "scale": "1x",
       "idiom": "mac"
     },
     {
+      "filename": "ExcellaLogo-64.png",
       "size": "32x32",
       "scale": "2x",
       "idiom": "mac"
     },
     {
+      "filename": "ExcellaLogo-128.png",
       "size": "128x128",
       "scale": "1x",
       "idiom": "mac"
     },
     {
+      "filename": "ExcellaLogo-256.png",
       "size": "128x128",
       "scale": "2x",
       "idiom": "mac"
     },
     {
+      "filename": "ExcellaLogo-256.png",
       "size": "256x256",
       "scale": "1x",
       "idiom": "mac"
     },
     {
+      "filename": "ExcellaLogo-512.png",
       "size": "256x256",
       "scale": "2x",
       "idiom": "mac"
     },
     {
+      "filename": "ExcellaLogo-512.png",
       "size": "512x512",
       "scale": "1x",
       "idiom": "mac"
     },
     {
+      "filename": "ExcellaLogo-1024.png",
       "size": "512x512",
       "scale": "2x",
       "idiom": "mac"

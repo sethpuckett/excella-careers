@@ -23,7 +23,7 @@
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <MtouchProfiling>true</MtouchProfiling>
-    <IntermediateOutputPath>C:\Users\Seth\AppData\Local\Temp\vs46C1.tmp\iPhoneSimulator\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -35,7 +35,7 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
-    <IntermediateOutputPath>C:\Users\Seth\AppData\Local\Temp\vs46C1.tmp\iPhone\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>Release\</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -46,7 +46,7 @@
     <MtouchArch>i386</MtouchArch>
     <ConsolePause>false</ConsolePause>
     <MtouchLink>None</MtouchLink>
-    <IntermediateOutputPath>C:\Users\Seth\AppData\Local\Temp\vs46C1.tmp\iPhoneSimulator\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>Release\</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -62,19 +62,11 @@
     <MtouchProfiling>true</MtouchProfiling>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
-    <IntermediateOutputPath>C:\Users\Seth\AppData\Local\Temp\vs46C1.tmp\iPhone\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="HtmlAgilityPack, Version=1.4.9.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\HtmlAgilityPack.1.4.9\lib\portable-net45+netcore45+wp8+MonoAndroid+MonoTouch\HtmlAgilityPack.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Plugin.Connectivity, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -89,6 +81,12 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\packages\HtmlAgilityPack.1.4.9.4\lib\portable-net45+netcore45+wp8+MonoAndroid+MonoTouch\HtmlAgilityPack.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ExcellaCareers\ExcellaCareers.csproj">
@@ -124,10 +122,34 @@
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\AppIcon40x40%402x.png" />
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon.png" />
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-72.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ITunesArtwork Include="Resources\ITunesArtwork" />
-    <ITunesArtwork Include="Resources\ITunesArtwork%402x" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-29.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-58.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-87.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-80.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-120.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-57.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-114.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-180.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-40.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-50.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-100.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-72.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-144.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-76.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-152.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-167.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-48.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-55.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-88.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-172.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-196.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-16.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-32.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-64.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-128.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-256.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-512.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-1024.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

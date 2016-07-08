@@ -1,0 +1,8 @@
+/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers/Debug/.NETPortable,Version=v4.5,Profile=Profile111.AssemblyAttribute.cs
+/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers/bin/Debug/ExcellaCareers.dll.mdb
+/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers/bin/Debug/ExcellaCareers.dll
+/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers/Debug/ExcellaCareers.dll
+/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers/Debug/ExcellaCareers.dll.mdb
+/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers/bin/Debug/Autofac.dll
+/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers/bin/Debug/Newtonsoft.Json.dll
+/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers/bin/Debug/HtmlAgilityPack.dll
