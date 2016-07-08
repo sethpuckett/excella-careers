@@ -14,16 +14,8 @@ namespace ExcellaCareers.iOS
     [Register ("ViewController")]
     partial class ViewController
     {
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton Button { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
-            if (Button != null) {
-                Button.Dispose ();
-                Button = null;
-            }
         }
     }
 }
