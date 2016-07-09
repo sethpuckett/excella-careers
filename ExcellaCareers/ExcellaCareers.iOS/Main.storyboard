@@ -12,29 +12,76 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <connections/>
+                    <view contentMode="scaleToFill" id="213" key="view">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBE-Ac-vcx">
-                                <rect key="frame" x="224" y="285" width="152" height="30"/>
-                                <state key="normal" title="Hello World, Click Me!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" placeholderIntrinsicWidth="125" placeholderIntrinsicHeight="125" image="ExcellaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="45">
+                                <rect key="frame" x="224" y="0.0" width="150" height="150"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="111.5" y="0.0" width="150" height="150"/>
+                                </variation>
+                                <constraints>
+                                    <constraint id="181" firstAttribute="width" constant="150"/>
+                                    <constraint id="182" firstAttribute="height" constant="150"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48" misplaced="YES">
+                                <rect key="frame" x="1" y="164" width="598" height="2"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="1" y="164" width="412" height="2"/>
+                                </variation>
+                                <constraints>
+                                    <constraint id="169" firstAttribute="height" constant="4"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="1" y="164" width="766" height="2"/>
+                                </variation>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="221" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="1" y="167" width="599" height="433"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="1" y="167" width="374" height="500"/>
+                                </variation>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="oBE-Ac-vcx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HiD-uS-i16"/>
-                            <constraint firstItem="oBE-Ac-vcx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YgX-7e-bMc"/>
+                            <constraint id="215" firstItem="45" firstAttribute="top" secondItem="213" secondAttribute="top"/>
+                            <constraint id="216" firstItem="213" firstAttribute="trailing" secondItem="48" secondAttribute="trailing" constant="1"/>
+                            <constraint id="217" firstItem="48" firstAttribute="top" secondItem="213" secondAttribute="top" constant="164"/>
+                            <constraint id="219" firstItem="213" firstAttribute="centerX" secondItem="45" secondAttribute="centerX" constant="1"/>
+                            <constraint id="220" firstItem="48" firstAttribute="leading" secondItem="213" secondAttribute="leading" constant="1"/>
+                            <constraint id="226" firstItem="213" firstAttribute="bottom" secondItem="221" secondAttribute="bottom"/>
+                            <constraint id="227" firstItem="213" firstAttribute="trailing" secondItem="221" secondAttribute="trailing"/>
+                            <constraint id="232" firstItem="221" firstAttribute="top" secondItem="48" secondAttribute="centerY" constant="1">
+                                <variation key="heightClass=regular-widthClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint id="241" firstItem="221" firstAttribute="leading" secondItem="213" secondAttribute="leading" constant="1"/>
                         </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="221"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="226"/>
+                                <include reference="227"/>
+                                <include reference="232"/>
+                                <include reference="241"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <connections>
-                        <outlet property="Button" destination="oBE-Ac-vcx" id="OkX-0Z-gth"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ExcellaLogo" width="580" height="580"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
 </document>

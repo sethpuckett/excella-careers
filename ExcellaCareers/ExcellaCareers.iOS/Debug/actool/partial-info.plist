@@ -25,12 +25,12 @@
 				<string>AppIcons40x40</string>
 				<string>AppIcons57x57</string>
 				<string>AppIcons60x60</string>
+				<string>AppIcons50x50</string>
 				<string>AppIcons72x72</string>
 				<string>AppIcons76x76</string>
+				<string>AppIcons83.5x83.5</string>
 			</array>
 		</dict>
 	</dict>
-	<key>UILaunchImageFile</key>
-	<string>LaunchImage</string>
 </dict>
 </plist>

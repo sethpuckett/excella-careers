@@ -7,13 +7,26 @@
 		<key>output-files</key>
 		<array>
 			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons29x29.png</string>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons29x29@2x.png</string>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons29x29@3x.png</string>
 			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons40x40@2x.png</string>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons40x40@3x.png</string>
 			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons57x57.png</string>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons57x57@2x.png</string>
 			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons60x60@2x.png</string>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons60x60@3x.png</string>
 			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons29x29~ipad.png</string>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons29x29@2x~ipad.png</string>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons40x40~ipad.png</string>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons40x40@2x~ipad.png</string>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons50x50~ipad.png</string>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons50x50@2x~ipad.png</string>
 			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons72x72~ipad.png</string>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons72x72@2x~ipad.png</string>
 			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons76x76~ipad.png</string>
-			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/LaunchImage.png</string>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons76x76@2x~ipad.png</string>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/AppIcons83.5x83.5@2x~ipad.png</string>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/bundle/Assets.car</string>
 			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Debug/actool/partial-info.plist</string>
 		</array>
 	</dict>
@@ -34,6 +47,42 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
+				<string>./AppIcons.appiconset/[iphone][57x57][][][2x]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Resources/Images.xcassets</string>
+			<key>message</key>
+			<string>57x57@2x app icons only apply to iPhone apps targeting releases of iOS prior to 7.0</string>
+			<key>type</key>
+			<string>Inapplicable Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcons.appiconset/[ipad][50x50][][][1x]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Resources/Images.xcassets</string>
+			<key>message</key>
+			<string>50x50 iPad spotlight icons only apply to iPad apps targeting releases of iOS prior to 7.0</string>
+			<key>type</key>
+			<string>Inapplicable Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcons.appiconset/[ipad][50x50][][][2x]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Resources/Images.xcassets</string>
+			<key>message</key>
+			<string>50x50 iPad spotlight icons only apply to iPad apps targeting releases of iOS prior to 7.0</string>
+			<key>type</key>
+			<string>Inapplicable Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
 				<string>./AppIcons.appiconset/[ipad][72x72][][][1x]</string>
 			</array>
 			<key>catalog</key>
@@ -46,12 +95,12 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./LaunchImage.launchimage/[iphone][][1x][portrait][full-screen][]</string>
+				<string>./AppIcons.appiconset/[ipad][72x72][][][2x]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Resources/Images.xcassets</string>
 			<key>message</key>
-			<string>This launch image only applies to iOS 6.x and prior but the minimum deployment is 7.0 or later.</string>
+			<string>72x72@2x app icons only apply to iPad apps targeting releases of iOS prior to 7.0</string>
 			<key>type</key>
 			<string>Inapplicable Content</string>
 		</dict>
@@ -61,50 +110,19 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./AppIcons.appiconset</string>
+				<string>./AppIcons.appiconset/(null)[2d][AppIcon40x40@2x.png]</string>
+				<string>./AppIcons.appiconset/(null)[2d][Icon-60@2x.png]</string>
+				<string>./AppIcons.appiconset/(null)[2d][Icon-72.png]</string>
+				<string>./AppIcons.appiconset/(null)[2d][Icon-76.png]</string>
+				<string>./AppIcons.appiconset/(null)[2d][Icon-Small.png]</string>
+				<string>./AppIcons.appiconset/(null)[2d][Icon.png]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Resources/Images.xcassets</string>
 			<key>message</key>
-			<string>A 76x76@2x app icon is required for iPad apps targeting iOS 7.0 and later</string>
+			<string>The app icon set "AppIcons" has 6 unassigned children.</string>
 			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcons.appiconset</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Resources/Images.xcassets</string>
-			<key>message</key>
-			<string>A 83.5x83.5@2x app icon is required for iPad apps targeting iOS 9.0 and later</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./LaunchImage.launchimage</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Resources/Images.xcassets</string>
-			<key>message</key>
-			<string>An iPhone Retina (4-inch) launch image for iOS 7.0 and later is required.</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcons.appiconset/[iphone][29x29][][][2x]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Resources/Images.xcassets</string>
-			<key>message</key>
-			<string>The file "Icon-Small@2x.png" for the image set "AppIcons" does not exist.</string>
-			<key>type</key>
-			<string>Missing Content</string>
+			<string>Ambiguous Content</string>
 		</dict>
 		<dict>
 			<key>affected-items</key>
