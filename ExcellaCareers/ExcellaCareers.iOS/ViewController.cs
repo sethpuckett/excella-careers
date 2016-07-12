@@ -10,6 +10,7 @@ namespace ExcellaCareers.iOS
 
 		public ViewController (IntPtr handle) : base (handle)
 		{
+			
 		}
 
 		public override void ViewDidLoad ()

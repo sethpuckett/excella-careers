@@ -105,7 +105,4 @@
         <image name="ExcellaLogo" width="580" height="580"/>
     </resources>
     <color key="tintColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedScreenMetrics key="destination" type="retina55"/>
-    </simulatedMetricsContainer>
 </document>

@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="ExcellaCareers/ExcellaCareers.iOS/ExcellaCareers.iOS.csproj">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ExcellaCareers.Tests/Services/CareerHtmlParserTests.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="ExcellaCareers/ExcellaCareers/Services/Impl/CareerHtmlParser.cs" Line="8" Column="2" />
-      <File FileName="ExcellaCareers.Tests/Services/CareerHtmlParserTests.cs" Line="4" Column="7" />
+      <File FileName="ExcellaCareers/ExcellaCareers.iOS/Info.plist" />
+      <File FileName="ExcellaCareers/ExcellaCareers.iOS/ViewController.cs" Line="17" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />

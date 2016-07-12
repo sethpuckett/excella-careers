@@ -12,7 +12,10 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <connections/>
+                    <connections>
+                        <outlet property="LoadingLabel" destination="194" id="name-outlet-194"/>
+                        <outlet property="JobTableView" destination="273" id="name-outlet-273"/>
+                    </connections>
                     <view contentMode="scaleToFill" id="213" key="view">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
@@ -20,7 +23,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" placeholderIntrinsicWidth="125" placeholderIntrinsicHeight="125" image="ExcellaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="45">
                                 <rect key="frame" x="224" y="0.0" width="150" height="150"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="111.5" y="0.0" width="150" height="150"/>
+                                    <rect key="frame" x="131" y="0.0" width="150" height="150"/>
                                 </variation>
                                 <constraints>
                                     <constraint id="181" firstAttribute="width" constant="150"/>
@@ -40,12 +43,57 @@
                                     <rect key="frame" x="1" y="164" width="766" height="2"/>
                                 </variation>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="221" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="1" y="167" width="599" height="433"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="1" y="167" width="374" height="500"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="194" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" enabled="NO" fixedFrame="YES">
+                                <rect key="frame" x="240.5" y="368" width="118.5" height="29.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="147.5" y="436" width="118.5" height="29.5"/>
                                 </variation>
-                            </stackView>
+                                <attributedString key="attributedText">
+                                    <fragment content=" Loading...">
+                                        <attributes>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="0.00784313725490196" green="0.12549019607843137" blue="0.30980392156862746" alpha="1"/>
+                                            <font key="NSFont" name="HelveticaNeue" family="Helvetica Neue" size="25"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="324.5" y="580" width="118.5" height="29.5"/>
+                                </variation>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="273" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="164" width="600" height="436"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="274" rowHeight="44">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="274" id="275">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="276" rowHeight="44">
+                                        <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="276" id="277">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="278" rowHeight="44">
+                                        <rect key="frame" x="0.0" y="116" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="278" id="279">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <constraints>
                             <constraint id="215" firstItem="45" firstAttribute="top" secondItem="213" secondAttribute="top"/>
@@ -53,22 +101,14 @@
                             <constraint id="217" firstItem="48" firstAttribute="top" secondItem="213" secondAttribute="top" constant="164"/>
                             <constraint id="219" firstItem="213" firstAttribute="centerX" secondItem="45" secondAttribute="centerX" constant="1"/>
                             <constraint id="220" firstItem="48" firstAttribute="leading" secondItem="213" secondAttribute="leading" constant="1"/>
-                            <constraint id="226" firstItem="213" firstAttribute="bottom" secondItem="221" secondAttribute="bottom"/>
-                            <constraint id="227" firstItem="213" firstAttribute="trailing" secondItem="221" secondAttribute="trailing"/>
-                            <constraint id="232" firstItem="221" firstAttribute="top" secondItem="48" secondAttribute="centerY" constant="1">
-                                <variation key="heightClass=regular-widthClass=compact" constant="1"/>
-                            </constraint>
-                            <constraint id="241" firstItem="221" firstAttribute="leading" secondItem="213" secondAttribute="leading" constant="1"/>
+                            <constraint id="282" firstItem="273" firstAttribute="leading" secondItem="213" secondAttribute="leading"/>
+                            <constraint id="283" firstItem="213" firstAttribute="trailing" secondItem="273" secondAttribute="trailing"/>
+                            <constraint id="284" firstItem="273" firstAttribute="top" secondItem="48" secondAttribute="top"/>
+                            <constraint id="285" firstItem="wfy-db-euE" firstAttribute="top" secondItem="273" secondAttribute="bottom"/>
                         </constraints>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="221"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="226"/>
-                                <include reference="227"/>
-                                <include reference="232"/>
-                                <include reference="241"/>
+                                <include reference="194"/>
                             </mask>
                         </variation>
                     </view>
@@ -81,7 +121,4 @@
     <resources>
         <image name="ExcellaLogo" width="580" height="580"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedScreenMetrics key="destination" type="retina47"/>
-    </simulatedMetricsContainer>
 </document>

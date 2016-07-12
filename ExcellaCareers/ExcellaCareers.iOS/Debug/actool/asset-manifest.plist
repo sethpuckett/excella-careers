@@ -110,6 +110,19 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
+				<string>./LaunchImage.launchimage/(null)[2d][Default-Portrait.png]</string>
+				<string>./LaunchImage.launchimage/(null)[2d][Default-Portrait@2x.png]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Resources/Images.xcassets</string>
+			<key>message</key>
+			<string>The launch image set "LaunchImage" has 2 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
 				<string>./AppIcons.appiconset/(null)[2d][AppIcon40x40@2x.png]</string>
 				<string>./AppIcons.appiconset/(null)[2d][Icon-60@2x.png]</string>
 				<string>./AppIcons.appiconset/(null)[2d][Icon-72.png]</string>
@@ -121,19 +134,6 @@
 			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Resources/Images.xcassets</string>
 			<key>message</key>
 			<string>The app icon set "AppIcons" has 6 unassigned children.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./LaunchImage.launchimage/(null)[2d][Default-Portrait.png]</string>
-				<string>./LaunchImage.launchimage/(null)[2d][Default-Portrait@2x.png]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Resources/Images.xcassets</string>
-			<key>message</key>
-			<string>The launch image set "LaunchImage" has 2 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>

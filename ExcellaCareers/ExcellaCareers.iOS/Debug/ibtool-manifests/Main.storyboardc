@@ -7,6 +7,52 @@
 	<key>com.apple.ibtool.document.notices</key>
 	<dict/>
 	<key>com.apple.ibtool.document.warnings</key>
-	<dict/>
+	<dict>
+		<key>274</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>274</string>
+				</array>
+				<key>message</key>
+				<string>Prototype table cells must have reuse identifiers</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>276</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>276</string>
+				</array>
+				<key>message</key>
+				<string>Prototype table cells must have reuse identifiers</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>278</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>278</string>
+				</array>
+				<key>message</key>
+				<string>Prototype table cells must have reuse identifiers</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+	</dict>
 </dict>
 </plist>
