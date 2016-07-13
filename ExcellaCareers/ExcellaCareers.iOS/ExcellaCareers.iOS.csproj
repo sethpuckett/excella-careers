@@ -165,7 +165,13 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="JobTableViewController.cs" />
+    <Compile Include="JobTableViewCell.cs" />
+    <Compile Include="JobTableViewCell.designer.cs">
+      <DependentUpon>JobTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobTableViewSource.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Images.xcassets\ExcellaLogo.imageset\" />
