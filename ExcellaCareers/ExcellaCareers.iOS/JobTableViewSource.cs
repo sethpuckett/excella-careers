@@ -20,6 +20,7 @@ namespace ExcellaCareers.iOS
 
 		public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
 		{
+			// TODO: Update to not need null check
 			var cell = tableView.DequeueReusableCell(CellIdentifier);
 			var item = jobList.ElementAt(indexPath.Row);
 
