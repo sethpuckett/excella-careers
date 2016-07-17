@@ -8,13 +8,13 @@ using UIKit;
 
 namespace ExcellaCareers.iOS
 {
-	public partial class ViewController : UIViewController
+	public partial class JobTableViewController : UIViewController
 	{
 		private readonly IHtmlScraper htmlScraper;
 
 		private readonly ICareerHtmlParser careerHtmlParser;
 
-		public ViewController (IntPtr handle) : base (handle)
+		public JobTableViewController (IntPtr handle) : base (handle)
 		{
 			this.htmlScraper = new HtmlScraper(new WebRequestService());
 			this.careerHtmlParser = new CareerHtmlParser();
@@ -22,17 +22,19 @@ namespace ExcellaCareers.iOS
 
 		public async override void ViewDidLoad()
 		{
-			this.JobTableView.Hidden = true;
 			this.LoadingLabel.Hidden = false;
-
-			base.ViewDidLoad();
+			this.JobTableView.Hidden = true;
 
 
 			var jobs = await this.LoadJobs();
 			this.JobTableView.Source = new JobTableViewSource(jobs);
+			this.JobTableView.ReloadData();
 
-			this.JobTableView.Hidden = false;
 			this.LoadingLabel.Hidden = true;
+			this.JobTableView.Hidden = false;
+
+			base.ViewDidLoad();
+
 		}
 
 		public override void DidReceiveMemoryWarning ()

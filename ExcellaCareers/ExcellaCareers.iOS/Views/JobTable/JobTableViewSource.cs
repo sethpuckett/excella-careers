@@ -11,7 +11,7 @@ namespace ExcellaCareers.iOS
 	{
 		private IEnumerable<Job> jobList;
 
-		private const string CellIdentifier = "jobCell";
+		private static readonly NSString CellIdentifier = new NSString("jobCell");
 
 		public JobTableViewSource(IEnumerable<Job> jobs)
 		{
@@ -21,14 +21,16 @@ namespace ExcellaCareers.iOS
 		public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
 		{
 			// TODO: Update to not need null check
-			var cell = tableView.DequeueReusableCell(CellIdentifier);
+			var cell = tableView.DequeueReusableCell(CellIdentifier) as JobTableViewCell;
 			var item = jobList.ElementAt(indexPath.Row);
 
-			//---- if there are no cells to reuse, create a new one
+			// if there are no cells to reuse, create a new one
 			if (cell == null)
-			{ cell = new UITableViewCell(UITableViewCellStyle.Default, CellIdentifier); }
+			{ 
+				cell = new JobTableViewCell(CellIdentifier); 
+			}
 
-			cell.TextLabel.Text = item.Title;
+			cell.UpdateCell(item.Title, item.Url);
 
 			return cell;
 		}

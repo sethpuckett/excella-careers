@@ -152,6 +152,8 @@
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-1024.png" />
     <ImageAsset Include="Resources\Images.xcassets\ExcellaLogo.imageset\Contents.json" />
     <ImageAsset Include="Resources\Images.xcassets\ExcellaLogo.imageset\ExcellaLogo.png" />
+    <ImageAsset Include="Resources\Images.xcassets\Share.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\Share.imageset\Share.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -165,16 +167,19 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="JobTableViewCell.cs" />
-    <Compile Include="JobTableViewCell.designer.cs">
+    <Compile Include="Views\JobTable\JobTableViewCell.cs" />
+    <Compile Include="Views\JobTable\JobTableViewCell.designer.cs">
       <DependentUpon>JobTableViewCell.cs</DependentUpon>
     </Compile>
-    <Compile Include="JobTableViewSource.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs" />
+    <Compile Include="Views\JobTable\JobTableViewSource.cs" />
+    <Compile Include="Views\JobTable\JobTableViewController.cs" />
+    <Compile Include="Views\JobTable\JobTableViewController.designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Images.xcassets\ExcellaLogo.imageset\" />
+    <Folder Include="Resources\Images.xcassets\Share.imageset\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\JobTable\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

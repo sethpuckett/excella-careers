@@ -11,8 +11,8 @@ using UIKit;
 
 namespace ExcellaCareers.iOS
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("JobTableViewController")]
+    partial class JobTableViewController
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]

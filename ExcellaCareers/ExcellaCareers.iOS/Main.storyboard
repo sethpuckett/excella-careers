@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="JobTableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -43,11 +43,52 @@
                                     <rect key="frame" x="1" y="164" width="766" height="2"/>
                                 </variation>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="194" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" enabled="NO" fixedFrame="YES">
-                                <rect key="frame" x="240.5" y="368" width="118.5" height="29.5"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="273" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="166" width="600" height="434"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="276" rowHeight="44" customClass="JobTableViewCell" reuseIdentifier="jobCell">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="276" id="277">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="297" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                                    <rect key="frame" x="20" y="11" width="462" height="21"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="298" translatesAutoresizingMaskIntoConstraints="NO">
+                                                    <rect key="frame" x="535" y="-8" width="45" height="45"/>
+                                                    <state key="normal" image="Share">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <constraints>
+                                                        <constraint id="302" firstItem="298" firstAttribute="height" constant="45"/>
+                                                        <constraint id="303" firstItem="298" firstAttribute="width" constant="45"/>
+                                                    </constraints>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint id="299" firstItem="277" firstAttribute="top" secondItem="298" secondAttribute="top" constant="8"/>
+                                                <constraint id="301" firstItem="277" firstAttribute="trailing" secondItem="298" secondAttribute="trailing" constant="20"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="jobLabel" destination="297" id="name-outlet-297"/>
+                                            <outlet property="jobButton" destination="298" id="name-outlet-298"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="194" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" enabled="NO">
+                                <rect key="frame" x="241" y="368.5" width="118.5" height="29.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
+                                <nil key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="147.5" y="436" width="118.5" height="29.5"/>
                                 </variation>
@@ -64,46 +105,6 @@
                                     <rect key="frame" x="324.5" y="580" width="118.5" height="29.5"/>
                                 </variation>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="273" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="0.0" y="164" width="600" height="436"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="274" rowHeight="44" style="IBUITableViewCellStyleDefault" textLabel="293">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="274" id="275">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="293">
-                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="276" rowHeight="44">
-                                        <rect key="frame" x="0.0" y="72" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="276" id="277">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="278" rowHeight="44">
-                                        <rect key="frame" x="0.0" y="116" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="278" id="279">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                         </subviews>
                         <constraints>
                             <constraint id="215" firstItem="45" firstAttribute="top" secondItem="213" secondAttribute="top"/>
@@ -113,8 +114,10 @@
                             <constraint id="220" firstItem="48" firstAttribute="leading" secondItem="213" secondAttribute="leading" constant="1"/>
                             <constraint id="282" firstItem="273" firstAttribute="leading" secondItem="213" secondAttribute="leading"/>
                             <constraint id="283" firstItem="213" firstAttribute="trailing" secondItem="273" secondAttribute="trailing"/>
-                            <constraint id="284" firstItem="273" firstAttribute="top" secondItem="48" secondAttribute="top"/>
+                            <constraint id="284" firstItem="273" firstAttribute="top" secondItem="48" secondAttribute="top" constant="2"/>
                             <constraint id="285" firstItem="wfy-db-euE" firstAttribute="top" secondItem="273" secondAttribute="bottom"/>
+                            <constraint id="310" firstItem="273" firstAttribute="centerX" secondItem="194" secondAttribute="centerX"/>
+                            <constraint id="311" firstItem="194" firstAttribute="centerY" secondItem="273" secondAttribute="centerY"/>
                         </constraints>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
@@ -130,5 +133,6 @@
     </scenes>
     <resources>
         <image name="ExcellaLogo" width="580" height="580"/>
+        <image name="Share" width="36" height="36"/>
     </resources>
 </document>

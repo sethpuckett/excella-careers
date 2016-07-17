@@ -51,7 +51,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content=" Loading...">
                                         <attributes>
-                                            <color key="NSColor" colorSpace="calibratedRGB" red="0.00784313725490196" green="0.12549019607843137" blue="0.30980392156862746" alpha="1"/>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="0.0196078431372549" green="0.062745098039215685" blue="0.18431372549019609" alpha="1"/>
                                             <font key="NSFont" name="HelveticaNeue" family="Helvetica Neue" size="25"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
@@ -103,6 +103,7 @@
     </scenes>
     <resources>
         <image name="ExcellaLogo" width="580" height="580"/>
+        <image name="Share" width="36" height="36"/>
     </resources>
     <color key="tintColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
 </document>
