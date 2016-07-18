@@ -14,38 +14,25 @@
                         <viewControllerLayoutGuide type="bottom" id="9ZL-r4-8FZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yd7-JS-zBw">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" placeholderIntrinsicWidth="125" placeholderIntrinsicHeight="125" image="ExcellaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="45">
-                                <rect key="frame" x="200" y="-25" width="198" height="198"/>
+                                <rect key="frame" x="75" y="-5" width="223" height="223"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="75" y="-25" width="223" height="223"/>
+                                    <rect key="frame" x="75" y="-5" width="168" height="168"/>
                                 </variation>
                                 <constraints>
-                                    <constraint id="208" firstAttribute="width" secondItem="45" secondAttribute="height" multiplier="1:1"/>
+                                    <constraint id="251" firstAttribute="width" secondItem="45" secondAttribute="height" multiplier="1:1"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48">
-                                <rect key="frame" x="1" y="173" width="598" height="2"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.7686274509803922" green="0.76470588235294112" blue="0.77254901960784317" alpha="1"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="1" y="198" width="373" height="2"/>
-                                </variation>
-                                <constraints>
-                                    <constraint id="169" firstAttribute="height" constant="2"/>
-                                </constraints>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <rect key="frame" x="1" y="341" width="766" height="2"/>
-                                </variation>
-                            </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="194" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="194" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" misplaced="YES">
                                 <rect key="frame" x="242" y="286.5" width="118.5" height="29.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="129.5" y="320" width="118.5" height="29.5"/>
+                                    <rect key="frame" x="102" y="226.5" width="118.5" height="29.5"/>
                                 </variation>
                                 <attributedString key="attributedText">
                                     <fragment content=" Loading...">
@@ -57,6 +44,19 @@
                                     </fragment>
                                 </attributedString>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48">
+                                <rect key="frame" x="1" y="218" width="373" height="2"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.7686274509803922" green="0.76470588235294112" blue="0.77254901960784317" alpha="1"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="1" y="163" width="318" height="2"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <rect key="frame" x="1" y="361" width="766" height="2"/>
+                                </variation>
+                                <constraints>
+                                    <constraint id="265" firstItem="48" firstAttribute="height" constant="2"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -64,32 +64,30 @@
                                 <include reference="194"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="171"/>
                                 <include reference="202"/>
                             </mask>
                         </variation>
                         <constraints>
-                            <constraint id="171" firstItem="yd7-JS-zBw" firstAttribute="trailing" secondItem="48" secondAttribute="trailing" constant="1"/>
-                            <constraint id="174" firstItem="48" firstAttribute="leading" secondItem="yd7-JS-zBw" secondAttribute="leading" constant="1"/>
-                            <constraint id="180" firstItem="45" firstAttribute="top" secondItem="yd7-JS-zBw" secondAttribute="top" constant="-25"/>
-                            <constraint id="183" firstItem="yd7-JS-zBw" firstAttribute="centerX" secondItem="45" secondAttribute="centerX" constant="1"/>
                             <constraint id="202" firstItem="194" firstAttribute="centerX" secondItem="yd7-JS-zBw" secondAttribute="centerX" constant="1">
                                 <variation key="heightClass=regular-widthClass=compact" constant="1"/>
                             </constraint>
                             <constraint id="203" firstItem="194" firstAttribute="centerY" secondItem="yd7-JS-zBw" secondAttribute="centerY" constant="1">
                                 <variation key="heightClass=regular-widthClass=compact" constant="1"/>
                             </constraint>
-                            <constraint id="207" firstItem="45" firstAttribute="leading" secondItem="yd7-JS-zBw" secondAttribute="leading" constant="200">
+                            <constraint id="248" firstItem="yd7-JS-zBw" firstAttribute="centerX" secondItem="45" secondAttribute="centerX" constant="1"/>
+                            <constraint id="249" firstItem="45" firstAttribute="leading" secondItem="yd7-JS-zBw" secondAttribute="leading" constant="75">
                                 <variation key="heightClass=regular-widthClass=compact" constant="75"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
                             </constraint>
-                            <constraint id="217" firstItem="45" firstAttribute="bottom" secondItem="48" secondAttribute="top">
-                                <variation key="heightClass=regular-widthClass=regular"/>
-                                <variation key="heightClass=regular-widthClass=compact"/>
+                            <constraint id="252" firstItem="45" firstAttribute="top" secondItem="Y8P-hJ-Z43" secondAttribute="bottom" constant="-25">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-25"/>
                             </constraint>
+                            <constraint id="253" firstItem="48" firstAttribute="leading" secondItem="yd7-JS-zBw" secondAttribute="leading" constant="1"/>
+                            <constraint id="254" firstItem="yd7-JS-zBw" firstAttribute="trailing" secondItem="48" secondAttribute="trailing" constant="1"/>
+                            <constraint id="255" firstItem="45" firstAttribute="bottom" secondItem="48" secondAttribute="top"/>
                         </constraints>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="171"/>
                                 <include reference="203"/>
                             </mask>
                         </variation>
@@ -111,6 +109,6 @@
     </resources>
     <color key="tintColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedScreenMetrics key="destination" type="retina47"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

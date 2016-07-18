@@ -119,41 +119,111 @@
     <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-Portrait%402x.png">
       <InProject>false</InProject>
     </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\AppIcon40x40%402x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-72.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-29.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-58.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-87.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-80.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-120.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-57.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-114.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-180.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-40.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-50.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-100.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-72.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-144.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-76.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-152.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-167.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-48.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-55.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-88.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-172.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-196.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-16.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-32.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-64.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-128.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-256.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-512.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-1024.png" />
-    <ImageAsset Include="Resources\Images.xcassets\ExcellaLogo.imageset\Contents.json" />
-    <ImageAsset Include="Resources\Images.xcassets\ExcellaLogo.imageset\ExcellaLogo.png" />
-    <ImageAsset Include="Resources\Images.xcassets\Share.imageset\Contents.json" />
-    <ImageAsset Include="Resources\Images.xcassets\Share.imageset\Share.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\AppIcon40x40%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-72.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-29.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-58.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-87.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-80.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-120.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-57.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-114.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-180.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-40.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-50.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-100.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-72.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-144.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-76.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-152.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-167.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-48.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-55.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-88.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-172.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-196.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-16.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-32.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-64.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-128.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-256.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-512.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\ExcellaLogo-1024.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ExcellaLogo.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\ExcellaLogo.imageset\ExcellaLogo.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Share.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\Share.imageset\Share.png">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

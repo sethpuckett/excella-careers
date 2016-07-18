@@ -21,7 +21,7 @@
                         <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" placeholderIntrinsicWidth="125" placeholderIntrinsicHeight="125" image="ExcellaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="45">
-                                <rect key="frame" x="200" y="-25" width="200" height="200"/>
+                                <rect key="frame" x="75" y="-25" width="450" height="450"/>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <rect key="frame" x="75" y="-25" width="223" height="223"/>
                                 </variation>
@@ -30,7 +30,7 @@
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="273" translatesAutoresizingMaskIntoConstraints="NO" allowsSelection="NO">
-                                <rect key="frame" x="0.0" y="175" width="600" height="425"/>
+                                <rect key="frame" x="0.0" y="425" width="600" height="175"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="276" rowHeight="44" customClass="JobTableViewCell" reuseIdentifier="jobCell">
@@ -74,7 +74,7 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48">
-                                <rect key="frame" x="1" y="175" width="598" height="2"/>
+                                <rect key="frame" x="1" y="425" width="598" height="2"/>
                                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.7686274509803922" green="0.76470588235294112" blue="0.77254901960784317" alpha="1"/>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <rect key="frame" x="1" y="198" width="373" height="2"/>
@@ -118,7 +118,7 @@
                             <constraint id="389" firstItem="45" firstAttribute="top" secondItem="213" secondAttribute="top" constant="-25">
                                 <variation key="heightClass=regular-widthClass=compact" constant="-25"/>
                             </constraint>
-                            <constraint id="390" firstItem="45" firstAttribute="leading" secondItem="213" secondAttribute="leading" constant="200">
+                            <constraint id="390" firstItem="45" firstAttribute="leading" secondItem="213" secondAttribute="leading" constant="75">
                                 <variation key="heightClass=regular-widthClass=compact" constant="75"/>
                             </constraint>
                             <constraint id="391" firstItem="213" firstAttribute="centerX" secondItem="45" secondAttribute="centerX">
@@ -144,7 +144,4 @@
         <image name="ExcellaLogo" width="580" height="580"/>
         <image name="Share" width="36" height="36"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedScreenMetrics key="destination" type="retina47"/>
-    </simulatedMetricsContainer>
 </document>

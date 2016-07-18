@@ -1,10 +1,9 @@
 ﻿<Properties StartupItem="ExcellaCareers/ExcellaCareers.iOS/ExcellaCareers.iOS.csproj">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ExcellaCareers/ExcellaCareers.iOS/ViewController.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="ExcellaCareers/ExcellaCareers.iOS/ViewController.cs" Line="28" Column="23" />
-      <File FileName="ExcellaCareers/ExcellaCareers.iOS/JobTableViewSource.cs" Line="30" Column="36" />
-      <File FileName="ExcellaCareers/ExcellaCareers.Droid/Activities/SplashActivity.cs" Line="45" Column="50" />
-      <File FileName="ExcellaCareers/ExcellaCareers.Droid/Resources/values/Strings.xml" Line="5" Column="87" />
+      <File FileName="ExcellaCareers/ExcellaCareers.iOS/Views/JobTable/JobTableViewController.cs" Line="30" Column="11" />
+      <File FileName="ExcellaCareers/ExcellaCareers.iOS/Views/JobTable/JobTableViewSource.cs" Line="45" Column="1" />
+      <File FileName="ExcellaCareers/ExcellaCareers.iOS/Views/JobTable/JobTableViewCell.cs" Line="22" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
@@ -12,5 +11,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ExcellaCareers.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.CEA78926-E348-4CC5-B86B-0D64057242BC" />
+  <MonoDevelop.Ide.ItemProperties.ExcellaCareers.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F4E36DA5-EC85-4B6E-BC0F-E1D0B5F03164" />
 </Properties>
