@@ -20,31 +20,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" placeholderIntrinsicWidth="125" placeholderIntrinsicHeight="125" image="ExcellaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="45">
-                                <rect key="frame" x="224" y="0.0" width="150" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" placeholderIntrinsicWidth="125" placeholderIntrinsicHeight="125" image="ExcellaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="45">
+                                <rect key="frame" x="200" y="-25" width="200" height="200"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="131" y="0.0" width="150" height="150"/>
+                                    <rect key="frame" x="75" y="-25" width="223" height="223"/>
                                 </variation>
                                 <constraints>
-                                    <constraint id="181" firstAttribute="width" constant="150"/>
-                                    <constraint id="182" firstAttribute="height" constant="150"/>
+                                    <constraint id="364" firstAttribute="width" secondItem="45" secondAttribute="height" multiplier="1:1"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48" misplaced="YES">
-                                <rect key="frame" x="1" y="164" width="598" height="2"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="1" y="164" width="412" height="2"/>
-                                </variation>
-                                <constraints>
-                                    <constraint id="169" firstAttribute="height" constant="4"/>
-                                </constraints>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="1" y="164" width="766" height="2"/>
-                                </variation>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="273" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="0.0" y="166" width="600" height="434"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="273" translatesAutoresizingMaskIntoConstraints="NO" allowsSelection="NO">
+                                <rect key="frame" x="0.0" y="175" width="600" height="425"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="276" rowHeight="44" customClass="JobTableViewCell" reuseIdentifier="jobCell">
@@ -54,27 +40,30 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="297" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                                    <rect key="frame" x="20" y="11" width="462" height="21"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="297" translatesAutoresizingMaskIntoConstraints="NO">
+                                                    <rect key="frame" x="20" y="15" width="28.5" height="13.5"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" colorSpace="calibratedRGB" red="0.0196078431372549" green="0.062745098039215685" blue="0.18431372549019609" alpha="1"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="298" translatesAutoresizingMaskIntoConstraints="NO">
-                                                    <rect key="frame" x="535" y="-8" width="45" height="45"/>
+                                                    <rect key="frame" x="560.5" y="12" width="19.5" height="19.5"/>
+                                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <state key="normal" image="Share">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <constraints>
-                                                        <constraint id="302" firstItem="298" firstAttribute="height" constant="45"/>
-                                                        <constraint id="303" firstItem="298" firstAttribute="width" constant="45"/>
+                                                        <constraint id="352" firstAttribute="width" secondItem="298" secondAttribute="height" multiplier="1:1"/>
                                                     </constraints>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint id="299" firstItem="277" firstAttribute="top" secondItem="298" secondAttribute="top" constant="8"/>
                                                 <constraint id="301" firstItem="277" firstAttribute="trailing" secondItem="298" secondAttribute="trailing" constant="20"/>
+                                                <constraint id="349" firstItem="277" firstAttribute="centerY" secondItem="298" secondAttribute="centerY"/>
+                                                <constraint id="351" firstItem="298" firstAttribute="top" secondItem="277" secondAttribute="top" constant="12"/>
+                                                <constraint id="360" firstItem="297" firstAttribute="centerY" secondItem="277" secondAttribute="centerY"/>
+                                                <constraint id="361" firstItem="297" firstAttribute="leading" secondItem="277" secondAttribute="leading" constant="20"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -84,13 +73,26 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48">
+                                <rect key="frame" x="1" y="175" width="598" height="2"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.7686274509803922" green="0.76470588235294112" blue="0.77254901960784317" alpha="1"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="1" y="198" width="373" height="2"/>
+                                </variation>
+                                <constraints>
+                                    <constraint id="169" firstAttribute="height" constant="2"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <rect key="frame" x="1" y="343" width="766" height="2"/>
+                                </variation>
+                            </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="194" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" enabled="NO">
-                                <rect key="frame" x="241" y="368.5" width="118.5" height="29.5"/>
+                                <rect key="frame" x="241" y="285.5" width="118.5" height="29.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="147.5" y="436" width="118.5" height="29.5"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="128.5" y="319" width="118.5" height="29.5"/>
                                 </variation>
                                 <attributedString key="attributedText">
                                     <fragment content=" Loading...">
@@ -101,23 +103,30 @@
                                         </attributes>
                                     </fragment>
                                 </attributedString>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="324.5" y="580" width="118.5" height="29.5"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <rect key="frame" x="325" y="497.5" width="118.5" height="29.5"/>
                                 </variation>
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint id="215" firstItem="45" firstAttribute="top" secondItem="213" secondAttribute="top"/>
                             <constraint id="216" firstItem="213" firstAttribute="trailing" secondItem="48" secondAttribute="trailing" constant="1"/>
-                            <constraint id="217" firstItem="48" firstAttribute="top" secondItem="213" secondAttribute="top" constant="164"/>
-                            <constraint id="219" firstItem="213" firstAttribute="centerX" secondItem="45" secondAttribute="centerX" constant="1"/>
                             <constraint id="220" firstItem="48" firstAttribute="leading" secondItem="213" secondAttribute="leading" constant="1"/>
                             <constraint id="282" firstItem="273" firstAttribute="leading" secondItem="213" secondAttribute="leading"/>
                             <constraint id="283" firstItem="213" firstAttribute="trailing" secondItem="273" secondAttribute="trailing"/>
-                            <constraint id="284" firstItem="273" firstAttribute="top" secondItem="48" secondAttribute="top" constant="2"/>
-                            <constraint id="285" firstItem="wfy-db-euE" firstAttribute="top" secondItem="273" secondAttribute="bottom"/>
-                            <constraint id="310" firstItem="273" firstAttribute="centerX" secondItem="194" secondAttribute="centerX"/>
-                            <constraint id="311" firstItem="194" firstAttribute="centerY" secondItem="273" secondAttribute="centerY"/>
+                            <constraint id="335" firstItem="194" firstAttribute="centerX" secondItem="213" secondAttribute="centerX"/>
+                            <constraint id="336" firstItem="194" firstAttribute="centerY" secondItem="213" secondAttribute="centerY"/>
+                            <constraint id="389" firstItem="45" firstAttribute="top" secondItem="213" secondAttribute="top" constant="-25">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-25"/>
+                            </constraint>
+                            <constraint id="390" firstItem="45" firstAttribute="leading" secondItem="213" secondAttribute="leading" constant="200">
+                                <variation key="heightClass=regular-widthClass=compact" constant="75"/>
+                            </constraint>
+                            <constraint id="391" firstItem="213" firstAttribute="centerX" secondItem="45" secondAttribute="centerX">
+                                <variation key="heightClass=regular-widthClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint id="397" firstItem="48" firstAttribute="top" secondItem="45" secondAttribute="bottom"/>
+                            <constraint id="398" firstItem="273" firstAttribute="top" secondItem="48" secondAttribute="top"/>
+                            <constraint id="399" firstItem="273" firstAttribute="bottom" secondItem="213" secondAttribute="bottom"/>
                         </constraints>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
@@ -135,4 +144,7 @@
         <image name="ExcellaLogo" width="580" height="580"/>
         <image name="Share" width="36" height="36"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
 </document>

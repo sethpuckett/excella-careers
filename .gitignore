@@ -8,6 +8,8 @@
 *.so
 **/bin/**
 **/obj/**
+**/Debug/**
+**/Release/**
 
 # Packages #
 ############
