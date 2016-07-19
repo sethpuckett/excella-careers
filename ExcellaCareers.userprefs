@@ -1,15 +1,9 @@
 ﻿<Properties StartupItem="ExcellaCareers/ExcellaCareers.iOS/ExcellaCareers.iOS.csproj">
-  <MonoDevelop.Ide.Workbench>
-    <Files>
-      <File FileName="ExcellaCareers/ExcellaCareers.iOS/Views/JobTable/JobTableViewController.cs" Line="30" Column="11" />
-      <File FileName="ExcellaCareers/ExcellaCareers.iOS/Views/JobTable/JobTableViewSource.cs" Line="45" Column="1" />
-      <File FileName="ExcellaCareers/ExcellaCareers.iOS/Views/JobTable/JobTableViewCell.cs" Line="22" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ExcellaCareers.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F4E36DA5-EC85-4B6E-BC0F-E1D0B5F03164" />
+  <MonoDevelop.Ide.ItemProperties.ExcellaCareers.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.861BF704-16A2-428F-9084-D7265BBA45F7" />
 </Properties>
