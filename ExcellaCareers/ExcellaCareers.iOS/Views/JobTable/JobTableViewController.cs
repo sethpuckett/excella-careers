@@ -27,7 +27,7 @@ namespace ExcellaCareers.iOS
 			this.JobTableView.Hidden = true;
 
 			var jobs = await this.LoadJobs();
-            var tableSource = new JobTableViewSource (jobs, this);
+            var tableSource = new JobTableViewSource (jobs);
             this.JobTableView.Source = tableSource;
             tableSource.ShareClicked += (sender, e) => {
                 var cell = sender as JobTableViewCell;

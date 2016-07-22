@@ -13,12 +13,9 @@ namespace ExcellaCareers.iOS
 
 		private static readonly NSString CellIdentifier = new NSString("jobCell");
 
-        private readonly UIViewController owner;
-
-		public JobTableViewSource(IEnumerable<Job> jobs, UIViewController owner)
+		public JobTableViewSource(IEnumerable<Job> jobs)
 		{
 			this.jobList = jobs;
-            this.owner = owner;
 		}
 
 		public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
