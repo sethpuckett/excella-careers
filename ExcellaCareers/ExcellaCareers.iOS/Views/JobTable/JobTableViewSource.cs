@@ -13,9 +13,12 @@ namespace ExcellaCareers.iOS
 
 		private static readonly NSString CellIdentifier = new NSString("jobCell");
 
-		public JobTableViewSource(IEnumerable<Job> jobs)
+        private readonly UIViewController owner;
+
+		public JobTableViewSource(IEnumerable<Job> jobs, UIViewController owner)
 		{
 			this.jobList = jobs;
+            this.owner = owner;
 		}
 
 		public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
@@ -31,6 +34,11 @@ namespace ExcellaCareers.iOS
 			}
 
 			cell.UpdateCell(item.Title, item.Url);
+            cell.ShareClicked += (sender, e) => {
+                if (this.ShareClicked != null) {
+                    this.ShareClicked (sender, e);
+                }
+            };
 
 			return cell;
 		}
@@ -39,6 +47,8 @@ namespace ExcellaCareers.iOS
 		{
 			return jobList.Count();
 		}
+
+        public event EventHandler ShareClicked;
 	}
 }
 

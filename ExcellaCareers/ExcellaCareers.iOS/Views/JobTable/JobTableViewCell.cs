@@ -6,27 +6,33 @@ namespace ExcellaCareers.iOS
 {
     public partial class JobTableViewCell : UITableViewCell
     {
-		private Uri jobUrl;
+        public Uri JobUrl { get; private set; }
 
-		public JobTableViewCell(IntPtr p) : base(p)
-		{
-			
-		}
+        public string JobTitle { get; private set; }
 
-		public JobTableViewCell (NSString cellId) : base (UITableViewCellStyle.Default, cellId)
+        public JobTableViewCell (IntPtr p) : base (p)
         {
 
         }
 
-		public void UpdateCell(string job, Uri url)
-		{
-			this.jobLabel.Text = job;
-			this.jobUrl = url;
+        public JobTableViewCell (NSString cellId) : base (UITableViewCellStyle.Default, cellId)
+        {
 
-			this.jobButton.TouchUpInside += (sender, e) =>
-			{
+        }
 
-			};
-		}
+        public void UpdateCell (string job, Uri url)
+        {
+            this.jobLabel.Text = job;
+            this.JobUrl = url;
+            this.JobTitle = job;
+
+            this.jobButton.TouchUpInside += (sender, e) => {
+                if (this.ShareClicked != null) {
+                    this.ShareClicked (this, e);
+                }
+            };
+        }
+
+        public event EventHandler ShareClicked;
     }
 }

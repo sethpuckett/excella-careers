@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using ExcellaCareers.Model;
 using ExcellaCareers.Services;
 using ExcellaCareers.Services.Impl;
+using Foundation;
 using UIKit;
 
 namespace ExcellaCareers.iOS
@@ -25,16 +26,26 @@ namespace ExcellaCareers.iOS
 			this.LoadingLabel.Hidden = false;
 			this.JobTableView.Hidden = true;
 
-
 			var jobs = await this.LoadJobs();
-			this.JobTableView.Source = new JobTableViewSource(jobs);
+            var tableSource = new JobTableViewSource (jobs, this);
+            this.JobTableView.Source = tableSource;
+            tableSource.ShareClicked += (sender, e) => {
+                var cell = sender as JobTableViewCell;
+                var activitiesItems = new NSString []
+                {
+                    (NSString)($"Check out this {cell.JobTitle} opportunity with Excella!{Environment.NewLine}{cell.JobUrl.GetLeftPart(UriPartial.Path)}")
+                };
+                var activityController = new UIActivityViewController (activitiesItems, null);
+                activityController.SetValueForKey (NSObject.FromObject ("Opportunities with Excella"), new NSString ("subject"));
+                this.PresentViewController (activityController, true, null);
+            };
+
 			this.JobTableView.ReloadData();
 
 			this.LoadingLabel.Hidden = true;
 			this.JobTableView.Hidden = false;
 
 			base.ViewDidLoad();
-
 		}
 
 		public override void DidReceiveMemoryWarning ()
