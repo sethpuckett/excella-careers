@@ -45,7 +45,7 @@ namespace ExcellaCareers.Tests.Services
         private string GetFileContents(string filename)
         {
             var asm = Assembly.GetExecutingAssembly();
-            var resource = $"ExcellaCareers.Tests.Resources.{filename}";
+            var resource = $"ExcellaCareers.Tests.Resources.Dependencies.{filename}";
             using (var stream = asm.GetManifestResourceStream(resource))
             {
                 if (stream != null)
