@@ -13,6 +13,7 @@ using Android.App;
 [assembly: AssemblyCopyright ("joe")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
+[assembly: Application(Icon = "@drawable/excellalogoicon")]
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
 // The form "{Major}.{Minor}.*" will automatically update the build and revision,
