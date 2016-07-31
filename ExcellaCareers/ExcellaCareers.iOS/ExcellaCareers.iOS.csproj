@@ -60,9 +60,10 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchProfiling>true</MtouchProfiling>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: Seth Puckett (B5JAZ2MKUP)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <IntermediateOutputPath>Debug\</IntermediateOutputPath>
+    <CodesignProvision>c115e52b-847c-4a33-a1ef-12327f37c655</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
