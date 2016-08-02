@@ -6,7 +6,7 @@
   <item>
     <bitmap
         android:src="@drawable/ExcellaLogo"
-        android:tileMode="disabled"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:layout_gravity="center"/>
   </item>
 </layer-list>

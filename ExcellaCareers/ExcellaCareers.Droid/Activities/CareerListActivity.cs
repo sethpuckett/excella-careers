@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 
 namespace ExcellaCareers.Droid.Activities
 {
-    [Activity (Label = "Excella Careers", Icon = "@drawable/ExcellaLogo")]
+    [Activity (Label = "Excella Careers", Icon = "@drawable/ExcellaLogoIcon")]
     public class CareerListActivity : Activity
     {
         protected override void OnCreate (Bundle bundle)

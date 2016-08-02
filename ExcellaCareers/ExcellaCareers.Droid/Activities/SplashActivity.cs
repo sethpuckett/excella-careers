@@ -16,7 +16,7 @@ using Plugin.Connectivity;
 
 namespace ExcellaCareers.Droid.Activities
 {
-    [Activity(Label = "Excella Careers", MainLauncher = true, Icon = "@drawable/ExcellaLogo", Theme = "@style/SplashTheme", NoHistory = true)]
+    [Activity(Label = "Excella Careers", MainLauncher = true, Icon = "@drawable/ExcellaLogoIcon", Theme = "@style/SplashTheme", NoHistory = true)]
     public class SplashActivty : AppCompatActivity
     {
         private readonly IHtmlScraper htmlScraper;
@@ -73,7 +73,6 @@ namespace ExcellaCareers.Droid.Activities
             intent.PutExtra("jobs", JsonConvert.SerializeObject(jobs));
             StartActivity(intent);
         }
-
 
         private void ShowNetworkError()
         {

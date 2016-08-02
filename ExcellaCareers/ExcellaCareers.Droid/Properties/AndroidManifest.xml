@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ExcellaCareers.ExcellaCareers" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="22" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-	<application android:label="Excella Careers" android:icon="@drawable/excellalogoicon" android:theme="@android:style/Theme.NoTitleBar"></application>
+	<application android:label="Excella Careers" android:icon="@drawable/ExcellaLogoIcon" android:theme="@android:style/Theme.NoTitleBar"></application>
 	<activity android:name=".SplashActivity" android:theme="@style/SplashTheme">
 		<intent-filter>
 			<action android:name="android.intent.action.MAIN" />
