@@ -1,20 +1,10 @@
-﻿<Properties StartupItem="ExcellaCareers/ExcellaCareers.Droid/ExcellaCareers.Droid.csproj">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ExcellaCareers.Tests/Services/CareerHtmlParserTests.cs">
-    <Files>
-      <File FileName="ExcellaCareers/ExcellaCareers.iOS/Views/JobTable/JobTableViewController.cs" Line="41" Column="12" />
-      <File FileName="ExcellaCareers/ExcellaCareers.iOS/Views/JobTable/JobTableViewSource.cs" Line="17" Column="4" />
-      <File FileName="ExcellaCareers/ExcellaCareers.iOS/Views/JobTable/JobTableViewCell.cs" Line="34" Column="10" />
-      <File FileName="ExcellaCareers.Tests/Services/HtmlScraperTests.cs" Line="1" Column="1" />
-      <File FileName="ExcellaCareers.Tests/Services/CareerHtmlParserTests.cs" Line="45" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+﻿<Properties StartupItem="ExcellaCareers/ExcellaCareers.iOS/ExcellaCareers.iOS.csproj">
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Views/JobTable/JobTableViewController.cs" line="33" column="1" />
-    </BreakpointStore>
+    <Breakpoint file="/Users/seth/Development/Projects/excella-careers/ExcellaCareers/ExcellaCareers.iOS/Views/JobTable/JobTableViewController.cs" line="33" column="1" />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ExcellaCareers.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.ItemProperties.ExcellaCareers.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.fc132c49cb69b85a369f11cb91a721b6b9133eb6" />
   <MonoDevelop.Ide.ItemProperties.ExcellaCareers.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
 </Properties>

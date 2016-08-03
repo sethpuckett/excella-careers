@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Sdk>
-  <AndroidApiLevel>24</AndroidApiLevel>
-  <AndroidApiLevelName>24</AndroidApiLevelName>
+  <AndroidApiLevel>22</AndroidApiLevel>
+  <AndroidApiLevelName>22</AndroidApiLevelName>
   <AndroidNdkPath>/Users/seth/Library/Developer/Xamarin/android-ndk/android-ndk-r11c</AndroidNdkPath>
   <AndroidSdkBuildToolsPath>/Users/seth/Library/Developer/Xamarin/android-sdk-macosx/build-tools/24.0.1</AndroidSdkBuildToolsPath>
   <AndroidSdkBuildToolsBinPath>/Users/seth/Library/Developer/Xamarin/android-sdk-macosx/build-tools/24.0.1</AndroidSdkBuildToolsBinPath>
@@ -12,9 +12,9 @@
   <ReferenceAssemblyPaths>
     <ReferenceAssemblyPath>/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0</ReferenceAssemblyPath>
   </ReferenceAssemblyPaths>
-  <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+  <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
   <ZipAlignPath>/Users/seth/Library/Developer/Xamarin/android-sdk-macosx/build-tools/24.0.1</ZipAlignPath>
   <MonoAndroidIncludePath />
-  <SupportedApiLevel>23</SupportedApiLevel>
+  <SupportedApiLevel>22</SupportedApiLevel>
   <AndroidSequencePointsMode>None</AndroidSequencePointsMode>
 </Sdk>

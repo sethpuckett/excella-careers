@@ -34,26 +34,26 @@
                                     <rect key="frame" x="1" y="343" width="766" height="2"/>
                                 </variation>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="273">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="273">
                                 <rect key="frame" x="0.0" y="142" width="600" height="458"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="jobCell" rowHeight="44" id="276" customClass="JobTableViewCell">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="jobCell" rowHeight="120" id="276" customClass="JobTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="276" id="277">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="297">
-                                                    <rect key="frame" x="20" y="15" width="28.5" height="13.5"/>
+                                                    <rect key="frame" x="15" y="53" width="28.5" height="13.5"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.019607843137254902" green="0.062745098039215685" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="298">
-                                                    <rect key="frame" x="560" y="12" width="19.5" height="19.5"/>
+                                                    <rect key="frame" x="483.5" y="4" width="111.5" height="111.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="298" secondAttribute="height" multiplier="1:1" id="352"/>
                                                     </constraints>
@@ -64,11 +64,11 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="298" secondAttribute="trailing" constant="20" id="301"/>
+                                                <constraint firstAttribute="trailing" secondItem="298" secondAttribute="trailing" constant="6" id="301"/>
                                                 <constraint firstAttribute="centerY" secondItem="298" secondAttribute="centerY" id="349"/>
-                                                <constraint firstItem="298" firstAttribute="top" secondItem="277" secondAttribute="top" constant="12" id="351"/>
+                                                <constraint firstItem="298" firstAttribute="top" secondItem="277" secondAttribute="top" constant="4" id="351"/>
                                                 <constraint firstItem="297" firstAttribute="centerY" secondItem="277" secondAttribute="centerY" id="360"/>
-                                                <constraint firstItem="297" firstAttribute="leading" secondItem="277" secondAttribute="leading" constant="20" id="361"/>
+                                                <constraint firstItem="297" firstAttribute="leading" secondItem="277" secondAttribute="leading" constant="15" id="361"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -119,6 +119,6 @@
     </scenes>
     <resources>
         <image name="ExcellaLogo" width="580" height="580"/>
-        <image name="Share" width="36" height="36"/>
+        <image name="Share" width="50" height="50"/>
     </resources>
 </document>
